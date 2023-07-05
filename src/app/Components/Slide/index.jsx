@@ -3,7 +3,7 @@ const Slide = () => {
     <section
       className="top-0"
       style={{
-        backgroundImage: "url('/hero/maringa.png')",
+        backgroundImage: "url('/assets/hero/maringa.png')",
         backgroundRepeat: "no-repeat",
         backgroundSize: "100%",
         backgroundClip: "content-box",
