@@ -25,3 +25,26 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.degrade-primary {
+  background: rgb(237, 187, 80);
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(237, 187, 80, 1) 0%,
+    rgba(255, 236, 194, 1) 50%,
+    rgba(237, 187, 80, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(237, 187, 80, 1) 0%,
+    rgba(255, 236, 194, 1) 50%,
+    rgba(237, 187, 80, 1) 100%
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(237, 187, 80, 1) 0%,
+    rgba(255, 236, 194, 1) 50%,
+    rgba(237, 187, 80, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#edbb50",endColorstr="#edbb50",GradientType=1);
+}
