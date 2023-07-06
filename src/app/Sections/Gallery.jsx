@@ -69,10 +69,10 @@ const Gallery = () => {
       </div>
 
       <div
-        className="container flex pb-24 justify-around"
+        className="container flex pb-24 justify-evenly"
         style={{ zIndex: 9, position: "relative" }}
       >
-        <div className=" ml-36 mt-16 sticky top-10 w-1/3">
+        <div className=" ml-36 mt-16  w-2/6">
           <h1 className="text-sm">SELECT PRIME</h1>
           <h2 className="text-3xl font-corporate ">Quer saber mais?</h2>
           <div className="border boreder-3 w-16 mt-3 degrade-primary"></div>
@@ -100,10 +100,10 @@ const Gallery = () => {
             </i>{" "}
           </p>
         </div>
-        <div className="">
+        <div className="mt-24 justify-self-start">
           <img
             alt="gallery"
-            className="aspect-[9/16] object-cover object-bottom block rounded-lg w-96"
+            className="aspect-[1/1] object-cover left-0 object-bottom block rounded-lg w-[26rem]"
             src="/assets/tempo.jpeg"
           />
         </div>

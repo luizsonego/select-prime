@@ -7,6 +7,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
+import Title from "../Components/Title";
 const arrInvest = [
   {
     icon: (
@@ -60,12 +61,8 @@ const Investing = () => {
         <div className="m-auto">
           <div className="flex items-center flex-wrap md:px-0 justify-center">
             <div className="relative lg:w-full lg:h-[35rem] lg:py-20 xl:py-20 lg:px-24 xl:px-24 bg-black">
-              <h1
-                className={`text-strong  text-5xl  z-50 font-corporate text-center`}
-                style={{ color: "#fff", fontWeight: "500" }}
-              >
-                <span className="text-degrade">Comece a investir</span>
-              </h1>
+              <Title title="Comece a investir" colorTitle="text-degrade" />
+
               <section className=" ">
                 <div className="px-5 py-24 mx-auto">
                   <div className="flex flex-nowrap -m-10 text-center justify-center">

@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("/public/assets/fonts/CorporateACon-Reg.otf");
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -37,6 +39,23 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+#navbar {
+  background: #00000055;
+}
+.navbar {
+  backdrop-filter: blur(50px);
+  transition: all 0.5s;
+}
+.navbar-fixed-top {
+  height: 70px;
+  background: #00000058;
+  padding: 0 11px;
+  transition: all 0.5s;
+}
+.navbar-fixed-top img {
+  width: 100px;
 }
 
 .degrade-primary {

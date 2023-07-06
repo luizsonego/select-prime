@@ -23,6 +23,24 @@ const DynamicTestimonials = dynamic(
 const DynamicGallery = dynamic(() => import("@/app/Sections/Gallery"), {
   loading: () => <p>Loading...</p>,
 });
+const DynamicFaixa = dynamic(() => import("@/app/Sections/Faixa"), {
+  loading: () => <p>Loading...</p>,
+});
+const DynamicResults = dynamic(() => import("@/app/Sections/Results"), {
+  loading: () => <p>Loading...</p>,
+});
+const DynamicServices = dynamic(() => import("@/app/Sections/Services"), {
+  loading: () => <p>Loading...</p>,
+});
+const DynamicPartners = dynamic(() => import("@/app/Sections/Partners"), {
+  loading: () => <p>Loading...</p>,
+});
+const DynamicCompromise = dynamic(() => import("@/app/Sections/Compromise"), {
+  loading: () => <p>Loading...</p>,
+});
+const DynamicContact = dynamic(() => import("@/app/Sections/Contact"), {
+  loading: () => <p>Loading...</p>,
+});
 
 export default function Home() {
   return (
@@ -34,7 +52,13 @@ export default function Home() {
       <DynamicFounders />
       <DynamicTestimonials />
       <DynamicAbout />
+      <DynamicFaixa />
       <DynamicGallery />
+      <DynamicResults />
+      <DynamicServices />
+      <DynamicPartners />
+      <DynamicCompromise />
+      <DynamicContact />
     </>
   );
 }

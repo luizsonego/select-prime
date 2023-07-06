@@ -1,23 +1,55 @@
 "use client";
 
-import React, { useState } from "react";
+import { useState } from "react";
+import ReactPlayer from "react-player";
+import { IconClose } from "../Components/Icons";
+import ResultEfect from "../Components/ResultEfect";
+import Title from "../Components/Title";
 import { tangerine } from "../fonts";
 
+const arrResults = [
+  {
+    id: 1,
+    text: "em créditos distribuídos",
+    number: <ResultEfect finalNumber="23" prefix="+" sufix="Bi" />,
+  },
+  {
+    id: 2,
+    text: "CLIENTES CONTEMPLADOS",
+    number: <ResultEfect finalNumber="159" prefix="+" sufix="mil" />,
+  },
+  {
+    id: 3,
+    text: "cotas comercializadas",
+    number: <ResultEfect finalNumber="256" prefix="+" sufix="mil" />,
+  },
+];
+
 const text = (
-  <>
-    <p>
+  <div className="flex gap-3 flex-col">
+    <h2 className="text-2xl text-center">
       <strong>A Select Prime</strong>
-    </p>
+    </h2>
     <p>
       Sediados na região central Maringá PR, somos representantes exclusivos da
       Racon Consórcios, uma marca da RANDON Administradora de Consórcios mais
       uma empresa do grupo RANDONCORP.
     </p>
-    <p>
-      https://www.randoncorp.com/pt/negocios/ <br />
-      https://www.racon.com.br/racon/historia
+    <p className="flex flex-row gap-4 text-cyan-100">
+      <a
+        className="no-underline hover:underline"
+        href="https://www.randoncorp.com/pt/negocios/ "
+      >
+        www.randoncorp.com/pt/negocios
+      </a>
+      <a
+        className="no-underline hover:underline"
+        href="https://www.racon.com.br/racon/historia"
+      >
+        www.racon.com.br/racon/historia
+      </a>
     </p>
-    <p>
+    <p className="text-xl text-center">
       <strong>A Racon</strong>
     </p>
     <p>
@@ -48,10 +80,19 @@ const text = (
       Por meio de uma rede própria de franquias, a Racon possui cerca de 130
       pontos de vendas e está presente em 10 estados brasileiros, aliando a
       economia, o planejamento e as demais vantagens do consórcio à aquisição de
-      imóveis e veículos. + de 23 Bi em créditos distribuídos + de 159 mil
-      clientes contemplados; + de 256 mil cotas comercializadas.
+      imóveis e veículos.
     </p>
-  </>
+    <p className="flex flez-row gap-16 justify-center">
+      {arrResults.map((result) => {
+        return (
+          <div key={result.id} className="text-center text-white">
+            <h1 className="text-5xl font-poppins">{result.number}</h1>
+            <h3 className="text-md font-light uppercase">{result.text}</h3>
+          </div>
+        );
+      })}
+    </p>
+  </div>
 );
 
 const About = () => {
@@ -75,12 +116,7 @@ const About = () => {
         <div className="m-auto">
           <div className="flex items-center flex-wrap md:px-0">
             <div className="relative lg:w-full lg:min-h-[40rem] lg:py-16 xl:py-16 lg:px-24 xl:px-32">
-              <h1
-                className={`text-strong  text-5xl z-50 font-corporate text-center mb-10`}
-                style={{ fontWeight: "500" }}
-              >
-                <span className="text-degrade">Sobre Nós</span>
-              </h1>
+              <Title title="Sobre Nós" colorTitle="text-degrade" />
               <div className="gap-16 items-center px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-6 lg:px-6">
                 <div className="font-light text-gray-500 sm:text-lg dark:text-gray-400">
                   <h5 className="mb-4 text-4xl font-extrabold text-gray-900 dark:text-white text-center font-corporate">
@@ -145,7 +181,7 @@ const About = () => {
                 </div>
               </div>
               <div className="flex justify-center items-center w-full  my-10 text-center ">
-                {/* <ReactPlayer
+                <ReactPlayer
                   url="https://www.youtube.com/watch?v=8O7PEJnHCd0"
                   light={false}
                   config={{
@@ -153,7 +189,7 @@ const About = () => {
                       playerVars: { showinfo: 1 },
                     },
                   }}
-                /> */}
+                />
               </div>
               <h1
                 className={`mb-6 text-6xl text-center ${tangerine.className}`}
@@ -165,34 +201,18 @@ const About = () => {
 
           {show && (
             <div
-              className="min-h-screen fixed py-12 bg-gray-700 dark:bg-gray-900 transition duration-150 ease-in-out z-10 overflow-hidden top-0 right-0 bottom-0 left-0"
+              className="min-h-screen fixed py-12 bg-zinc-700/30 backdrop-blur-md transition duration-150 ease-in-out z-90 top-0 right-0 bottom-0 left-0"
+              style={{ zIndex: 9999999999999 }}
               id="modal"
             >
-              <div role="alert" className="container mx-auto w-11/12 md:w-2/3 ">
-                <div className="relative py-8 px-8 md:px-16 bg-white dark:bg-gray-800 dark:border-gray-700 shadow-md rounded border border-gray-400">
+              <div className="container mx-auto w-11/12 md:w-2/3 ">
+                <div className="relative overflow-y-auto h-[38rem] py-8 px-8 md:px-16 bg-zinc-900  shadow-md rounded border border-gray-400">
                   {text}
-
                   <div
-                    className="cursor-pointer absolute top-0 right-0 mt-4 mr-5 text-gray-400 hover:text-gray-600 dark:hover:text-gray-500 transition duration-150 ease-in-out"
+                    className="cursor-pointer fixed top-0 right-0 mt-4 mr-5 text-gray-400 hover:text-gray-600 dark:hover:text-gray-500 transition duration-150 ease-in-out"
                     onClick={() => setShow(!show)}
                   >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      aria-label="Close"
-                      className="icon icon-tabler icon-tabler-x"
-                      width={20}
-                      height={20}
-                      viewBox="0 0 24 24"
-                      strokeWidth="2.5"
-                      stroke="currentColor"
-                      fill="none"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    >
-                      <path stroke="none" d="M0 0h24v24H0z" />
-                      <line x1={18} y1={6} x2={6} y2={18} />
-                      <line x1={6} y1={6} x2={18} y2={18} />
-                    </svg>
+                    <IconClose />
                   </div>
                 </div>
               </div>

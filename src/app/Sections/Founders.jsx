@@ -1,5 +1,6 @@
-import React, { Fragment } from "react";
+import { Fragment } from "react";
 import { IconFacebook, IconInstagram, IconLinkedin } from "../Components/Icons";
+import Title from "../Components/Title";
 
 const arrFounders = [
   {
@@ -44,12 +45,7 @@ const Founders = () => {
         <div className=" m-auto">
           <div className="flex items-center flex-wrap md:px-0">
             <div className="relative lg:w-full lg:min-h-[35rem] lg:py-20 xl:py-20 lg:px-24 xl:px-32 bg-black">
-              <h1
-                className={`text-strong  text-5xl z-50 font-corporate text-center mb-10`}
-                style={{ fontWeight: "500" }}
-              >
-                <span className="text-degrade">Fundadores</span>
-              </h1>
+              <Title title="Fundadores" colorTitle="text-degrade" />
               <div className="flex justify-center mb-20">
                 {arrFounders.map((invest, index) => (
                   <Fragment key={index}>

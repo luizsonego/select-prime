@@ -1,4 +1,7 @@
-import React from "react";
+"use client";
+
+import ReactPlayer from "react-player";
+import Title from "../Components/Title";
 
 const arrTestimonials = [
   {
@@ -40,12 +43,7 @@ const Testimonials = () => {
         <div className=" m-auto">
           <div className="flex items-center flex-wrap md:px-0">
             <div className="relative lg:w-full lg:min-h-[35rem] lg:py-16 xl:py-16 lg:px-24 xl:px-32 bg-white">
-              <h1
-                className={`text-strong  text-5xl z-50 font-corporate text-center mb-10`}
-                style={{ fontWeight: "500" }}
-              >
-                <span className="text-black">Depoimentos</span>
-              </h1>
+              <Title title="Depoimentos" colorTitle="text-black" />
               <section className="text-gray-600 body-font">
                 <div className="px-5 py-5 mx-auto">
                   <div className="flex flex-wrap -m-4 justify-center">
@@ -86,16 +84,16 @@ const Testimonials = () => {
             </div>
           </div>
           <div className="flex justify-center items-top w-full  my-10 text-center bg-black terminonial-bg">
-            {/* <ReactPlayer
+            <ReactPlayer
               url="https://www.youtube.com/watch?v=oBpbZhNt5Ps"
-              light={true}
+              light={false}
               config={{
                 youtube: {
-                  playerVars: { showinfo: 1 },
+                  playerVars: { showinfo: 0 },
                 },
               }}
               classNames="mx-5 w-10 h-10 left-10 w-1/2"
-            /> */}
+            />
             <div className="text-white p-10 item-top w-1/2">
               <h1
                 variant="h1"
