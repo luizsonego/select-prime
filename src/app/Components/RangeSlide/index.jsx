@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import { useState } from "react";
 
 import "./styles.css";
 
@@ -16,10 +16,6 @@ const RangeSlide = () => {
   const handleFormSimulate = () => {
     setHidden(0);
   };
-
-  const arr = [
-    1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
-  ];
 
   return (
     <>
@@ -45,10 +41,8 @@ const RangeSlide = () => {
                 onChange={handleRangeChange}
               />
               <datalist>
-                {arr.map((a) => (
-                  <option key={a} value="">
-                    |
-                  </option>
+                {[...Array(35)].map((index) => (
+                  <option key={index} value=""></option>
                 ))}
               </datalist>
             </div>

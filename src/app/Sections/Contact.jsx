@@ -1,5 +1,3 @@
-import React from "react";
-
 const Contact = () => {
   return (
     <section className="text-gray-600 body-font relative bg-white">
@@ -62,7 +60,7 @@ const Contact = () => {
               <p className="my-3">
                 Rua Santos Dumont, 3.275 – 19º andar – Sala 1902 <br />
                 CENTRO EMPRESARIAL EMPIRE CENTER <br />
-                Zona 01 – Maringá, Pr
+                Zona 01 – Maringá, PR
               </p>
               <p className="-my-1 mb-5">
                 <a className="text-yellow-700 leading-relaxed">

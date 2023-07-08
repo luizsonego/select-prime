@@ -1,4 +1,10 @@
-import { Great_Vibes, Poppins, Roboto_Mono, Tangerine } from "next/font/google";
+import {
+  Great_Vibes,
+  Poppins,
+  Roboto,
+  Roboto_Mono,
+  Tangerine,
+} from "next/font/google";
 
 export const greatvibes = Great_Vibes({
   weight: ["400"],
@@ -12,6 +18,11 @@ export const tangerine = Tangerine({
 
 export const roboto_mono = Roboto_Mono({
   subsets: ["latin"],
+});
+
+export const roboto = Roboto({
+  subsets: ["latin"],
+  weight: ["100", "300", "400", "500", "700", "900"],
 });
 
 export const poppins = Poppins({

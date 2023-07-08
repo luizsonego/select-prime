@@ -154,7 +154,12 @@ const About = () => {
                       amigos e clientes.
                     </p>
                   </div>
-                  <p onClick={() => setShow(!show)}>Ler mais</p>
+                  <p
+                    className="no-underline hover:underline text-center cursor-pointer mt-5"
+                    onClick={() => setShow(!show)}
+                  >
+                    Ler mais
+                  </p>
                   {/* <p onClick={handleOpen}>Ler mais</p> */}
                 </div>
                 {/* <div className="grid grid-cols-2 gap-4 mt-8"> */}

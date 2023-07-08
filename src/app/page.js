@@ -1,4 +1,3 @@
-import Navbar from "@/app/Components/Navbar";
 import Hero from "@/app/Sections/Hero";
 import dynamic from "next/dynamic";
 
@@ -41,11 +40,14 @@ const DynamicCompromise = dynamic(() => import("@/app/Sections/Compromise"), {
 const DynamicContact = dynamic(() => import("@/app/Sections/Contact"), {
   loading: () => <p>Loading...</p>,
 });
+const DynamicBanner = dynamic(() => import("@/app/Sections/Banner"), {
+  loading: () => <p>Loading...</p>,
+});
 
 export default function Home() {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <Hero />
       <DynamicInvesting />
       <DynamicSimulator />
@@ -57,6 +59,7 @@ export default function Home() {
       <DynamicResults />
       <DynamicServices />
       <DynamicPartners />
+      <DynamicBanner />
       <DynamicCompromise />
       <DynamicContact />
     </>

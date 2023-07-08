@@ -1,11 +1,15 @@
-import React from "react";
 import { poppins } from "../../fonts";
 
-const Title = ({ title, subheader = "", colorTitle, colorsubheader }) => {
+const Title = ({
+  title,
+  subheader = "",
+  colorTitle,
+  colorsubheader = "text-black",
+}) => {
   return (
     <>
       <h1
-        className={`-mb-5 text-2xl text-center leading-[1.5] ${colorsubheader} ${poppins.className}`}
+        className={`-mb-1 text-xl text-center leading-[1.5] ${colorsubheader} ${poppins.className}`}
       >
         {subheader}
       </h1>

@@ -12,7 +12,7 @@ const Faixa = () => {
     >
       <div className="flex" style={{ zIndex: 10, position: "relative" }}>
         <div className="flex-none w-[30rem]"></div>
-        <div className="flex-1 pt-[7rem] ml-24 text-left">
+        <div className="flex-1 p-24 pt-32 ml-24 text-left">
           <h1
             className="text-white text-strong text-2xl font-corporate content-center"
             style={{ color: "#fff", fontWeight: "500", width: "95%" }}
@@ -33,7 +33,7 @@ const Faixa = () => {
               objetivo alcançado pode ser maior, pois muitos contribuem com
               aquele sonho, fica mais fácil viabilizá-lo.
             </i>
-            <span className="flex justify-end right-10">
+            <span className="flex justify-end right-10 text-xl">
               <i>Francis cunha</i>
             </span>
           </h1>

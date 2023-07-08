@@ -16,8 +16,8 @@ const arrFounders = [
     name: "Luana Souza",
     image: "/assets/peoples/luana.png",
     cargo: "Sócia – Diretora Financeira / Administrativa",
-    desc: "Curitibana, formada em Arquitetura em Urbanismo pela FAG (Faculdade Assis Gurgacz) e Pós-graduada em Gestão de Obras, pelo SENAI, atuando há mais de 8 anos no setor financeiro e imobiliário, fomentando operações de crédito no ramo da construção civil, atualmente especialista em Liberação de Crédito e Gestão.",
-    instagram: "http://instagram.com/souza_luh",
+    desc: "Curitibana, formada em Arquitetura e Urbanismo pela FAG (Faculdade Assis Gurgacz) e Pós-graduada em Gestão de Obras, pelo SENAI, atuando há mais de 8 anos no setor financeiro e imobiliário, fomentando operações de crédito no ramo da construção civil, atualmente especialista em Liberação de Crédito e Gestão.",
+    instagram: "http://instagram.com/souza_luhh",
     facebook: "Racon Consórcios – Maringá PR",
     linkedin: "Select Prime Financial Solutions",
   },
@@ -39,7 +39,7 @@ const Founders = () => {
             opacity: 0.2,
             width: "100%",
             height: "100%",
-            zIndex: "999",
+            zIndex: "9",
           }}
         ></div>
         <div className=" m-auto">
