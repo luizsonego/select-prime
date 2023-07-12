@@ -12,7 +12,7 @@
 input[type="range"].slider {
   /* -webkit-appearance: none;
   appearance: none; */
-  width: 600px;
+  /* width: 600px; */
   height: 10px;
   background: #ccc;
   /* border-radius: 15px; */

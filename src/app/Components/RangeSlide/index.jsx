@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 
+import { roboto } from "@/app/fonts";
 import "./styles.css";
 
 const RangeSlide = () => {
@@ -21,9 +22,11 @@ const RangeSlide = () => {
     <>
       {hidden === 1 ? (
         <>
-          <div className="flex justify-center">
+          <div className="flex justify-center container mx-auto">
             <div className="range-wrapper">
-              <div className="mb-6 text-6xl text-center text-black font-roboto">
+              <div
+                className={`mb-6 text-6xl text-center text-black ${roboto.className}`}
+              >
                 {new Intl.NumberFormat("pr-BR", {
                   style: "currency",
                   currency: "BRL",
@@ -36,11 +39,11 @@ const RangeSlide = () => {
                 max="40000"
                 step="500"
                 value={value}
-                className="slider w-full"
+                className="slider w-[80vw] md:w-[50vw] mx-10 "
                 name=""
                 onChange={handleRangeChange}
               />
-              <datalist>
+              <datalist className="w-[80vw] md:w-[50vw] mx-10 ">
                 {[...Array(35)].map((index) => (
                   <option key={index} value=""></option>
                 ))}

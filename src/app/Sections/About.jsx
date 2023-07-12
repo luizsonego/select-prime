@@ -30,12 +30,12 @@ const text = (
     <h2 className="text-2xl text-center">
       <strong>A Select Prime</strong>
     </h2>
-    <p>
+    <p className="md:text:left text-justify">
       Sediados na região central Maringá PR, somos representantes exclusivos da
       Racon Consórcios, uma marca da RANDON Administradora de Consórcios mais
       uma empresa do grupo RANDONCORP.
     </p>
-    <p className="flex flex-row gap-4 text-cyan-100">
+    <p className="flex md:flex-row flex-col gap-4 text-cyan-100">
       <a
         className="no-underline hover:underline"
         href="https://www.randoncorp.com/pt/negocios/ "
@@ -52,12 +52,12 @@ const text = (
     <p className="text-xl text-center">
       <strong>A Racon</strong>
     </p>
-    <p>
+    <p className="md:text:left text-justify">
       A Racon Consórcios é a marca da Randon Administradora de Consórcios. Sob
       essa marca, iniciou operações em 1991, no segmento de consórcios para a
       aquisição de veículos e, em 1993, agregou o segmento de imóveis.
     </p>
-    <p>
+    <p className="md:text:left text-justify">
       A Randon Consórcios presta serviços financeiros, por meio da administração
       de consórcios, para outros cinco segmentos, além da Racon Consórcios. São
       eles: implementos rodoviários, com o Consórcio Nacional RANDON; máquinas e
@@ -66,7 +66,7 @@ const text = (
       Foton Caminhões pesados e extrapesados, com o Consórcio Nacional DAF,
       todos eles em parceria com os fabricantes das referidas marcas.
     </p>
-    <p>
+    <p className="md:text:left text-justify">
       A empresa é uma das líderes no mercado de consórcios de pesados e está
       entre as maiores administradoras de consórcios de imóveis. Sua atuação no
       mercado baseia-se em três premissas: relacionamento, flexibilidade e
@@ -76,13 +76,13 @@ const text = (
       confiabilidade, segurança e transparência na administração dos seus
       investimentos.
     </p>
-    <p>
+    <p className="md:text:left text-justify">
       Por meio de uma rede própria de franquias, a Racon possui cerca de 130
       pontos de vendas e está presente em 10 estados brasileiros, aliando a
       economia, o planejamento e as demais vantagens do consórcio à aquisição de
       imóveis e veículos.
     </p>
-    <p className="flex flez-row gap-16 justify-center">
+    <p className="flex md:flex-row flex-col gap-16 justify-center">
       {arrResults.map((result) => {
         return (
           <div key={result.id} className="text-center text-white">
@@ -101,12 +101,11 @@ const About = () => {
     <>
       <div className="relative about" id="sobre">
         <div
-          className="absolute"
+          className="top-0 h-[100vh] md:h-[85vh] bg-top md:bg-bottom bg-cover absolute"
           style={{
-            background: "url('/assets/sala/sala-capa.jpg')",
+            backgroundImage: "url('/assets/sala/sala-capa.jpg')",
             backgroundRepeat: "no-repeat",
-            backgroundSize: "100%",
-            backgroundPositionY: "50%",
+            backgroundClip: "content-box",
             backgroundAttachment: "fixed",
             opacity: 0.3,
             width: "100%",
@@ -115,11 +114,11 @@ const About = () => {
         ></div>
         <div className="m-auto">
           <div className="flex items-center flex-wrap md:px-0">
-            <div className="relative lg:w-full lg:min-h-[40rem] lg:py-16 xl:py-16 lg:px-24 xl:px-32">
+            <div className="relative lg:w-full lg:min-h-[40rem] lg:py-16 xl:py-16 lg:px-24 py-10 xl:px-32 container mx-auto w-full">
               <Title title="Sobre Nós" colorTitle="text-degrade" />
-              <div className="gap-16 items-center px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-6 lg:px-6">
-                <div className="font-light text-gray-500 sm:text-lg dark:text-gray-400">
-                  <h5 className="mb-4 text-4xl font-extrabold text-gray-900 dark:text-white text-center font-corporate">
+              <div className="gap-16 items-center  lg:grid lg:grid-cols-2 lg:py-6 lg:px-6 px-6">
+                <div className="font-light text gray-500 sm:text-lg ">
+                  <h5 className="mb-4 text-4xl  font-extrabold text-white text-center font-corporate">
                     Invista com Sabedoria e Segurança
                   </h5>
                   <h3
@@ -155,37 +154,36 @@ const About = () => {
                     </p>
                   </div>
                   <p
-                    className="no-underline hover:underline text-center cursor-pointer mt-5"
+                    className="no-underline hover:underline text-center cursor-pointer my-8"
                     onClick={() => setShow(!show)}
                   >
                     Ler mais
                   </p>
-                  {/* <p onClick={handleOpen}>Ler mais</p> */}
                 </div>
                 {/* <div className="grid grid-cols-2 gap-4 mt-8"> */}
                 <div className="flex items-center justify-center -mx-4 lg:pl-8 ">
                   <div className="flex flex-col items-end px-3">
                     <img
-                      className="object-cover mb-6 rounded shadow-lg h-28 sm:h-48 xl:h-56 w-28 sm:w-48 xl:w-56"
+                      className="object-cover mb-6 rounded shadow-lg h-32 w-32 md:h-48 md:w-48 xl:h-56 xl:w-56"
                       src="/assets/sala/sala12.jpeg"
                       alt=""
                     />
                     <img
-                      className="object-cover w-20 h-20 rounded shadow-lg sm:h-32 xl:h-40 sm:w-32 xl:w-40"
+                      className="object-cover rounded shadow-lg w-28 h-28 sm:h-32 sm:w-32 xl:h-40 xl:w-40"
                       src="/assets/sala/10.jpg"
                       alt=""
                     />
                   </div>
                   <div className="px-3">
                     <img
-                      className="object-cover w-40 h-40 rounded shadow-lg sm:h-64 xl:h-80 sm:w-64 xl:w-80"
+                      className="object-cover rounded shadow-lg w-48 h-48 sm:h-64 sm:w-64 xl:h-80 xl:w-80"
                       src="/assets/sala/IMG_0718.jpeg"
                       alt=""
                     />
                   </div>
                 </div>
               </div>
-              <div className="flex justify-center items-center w-full  my-10 text-center ">
+              <div className="flex justify-center items-center w-full my-10 text-center px-5">
                 <ReactPlayer
                   url="https://www.youtube.com/watch?v=8O7PEJnHCd0"
                   light={false}

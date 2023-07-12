@@ -6,7 +6,6 @@ import {
   faPeopleLine,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React from "react";
 import Title from "../Components/Title";
 const arrInvest = [
   {
@@ -60,16 +59,16 @@ const Investing = () => {
       <div className="relative" id="comece-a-investir">
         <div className="m-auto">
           <div className="flex items-center flex-wrap md:px-0 justify-center">
-            <div className="relative lg:w-full lg:h-[35rem] lg:py-20 xl:py-20 lg:px-24 xl:px-24 bg-black">
+            <div className="relative lg:w-full lg:h-[35rem] lg:py-20 xl:py-20 lg:px-24 xl:px-24 py-10 bg-black">
               <Title title="Comece a investir" colorTitle="text-degrade" />
 
               <section className=" ">
-                <div className="px-5 py-24 mx-auto">
-                  <div className="flex flex-nowrap -m-10 text-center justify-center">
+                <div className="px-5 py-16 mx-auto">
+                  <div className="flex flex-wrap -m-10 text-center justify-center container mx-auto">
                     {arrInvest.map((invest, index) => (
                       <div
                         key={index + 1}
-                        className="p-2 md:w-1/4 sm:w-1/2 w-full hover:text-gray-700"
+                        className="px-2 py-5 md:w-1/5 sm:w-1/2 w-1/2 hover:text-gray-700"
                       >
                         <div
                           className="border-2 border-gray-800 px-4 py-6 rounded-lg 

@@ -42,16 +42,20 @@ const Founders = () => {
             zIndex: "9",
           }}
         ></div>
-        <div className=" m-auto">
-          <div className="flex items-center flex-wrap md:px-0">
-            <div className="relative lg:w-full lg:min-h-[35rem] lg:py-20 xl:py-20 lg:px-24 xl:px-32 bg-black">
+        <div className="mx-auto">
+          <div className="flex items-center flex-wrap md:px-0 mx-auto">
+            <div className="relative lg:w-full lg:min-h-[35rem] lg:py-20 xl:py-20 lg:px-24 xl:px-32 py-10 bg-black ">
               <Title title="Fundadores" colorTitle="text-degrade" />
               <div className="flex justify-center mb-20">
                 {arrFounders.map((invest, index) => (
                   <Fragment key={index}>
-                    <div className="card-founders w-80 mx-10 rounded">
+                    <div className="card-founders w-80 mx-10 rounded hidden md:block">
                       <div className="header h-[25rem]">
-                        <img src={invest.image} alt="profile-picture" />
+                        <img
+                          src={invest.image}
+                          alt={`Imagem de perfil ${invest.name}`}
+                          title={`Imagem de perfil ${invest.name}`}
+                        />
                       </div>
                       <div className="body">
                         <h4 className="text-black">{invest.name}</h4>
@@ -65,24 +69,73 @@ const Founders = () => {
                         </a>
                         <a href={invest.facebook}>
                           <IconFacebook className="fa-3x text-gray-300 svg-icon" />
-                          {/* <FontAwesomeIcon
-                            icon="fa-brands fa-facebook"
-                            className="fa-3x text-gray-300 svg-icon"
-                            transform="rotate--40"
-                          /> */}
                         </a>
                         <a href={invest.linkedin}>
                           <IconLinkedin className="fa-3x text-gray-300 svg-icon" />
-                          {/* <FontAwesomeIcon
-                            icon="fa-brands fa-linkedin"
-                            className="fa-3x text-gray-300 svg-icon"
-                            transform="rotate--40"
-                          /> */}
                         </a>
                       </div>
                     </div>
                   </Fragment>
                 ))}
+              </div>
+              <div className="container mx-auto">
+                <div className="lg:flex md:flex sm:flex items-center xl:justify-between flex-wrap md:justify-around sm:justify-around lg:justify-around mx-10">
+                  {arrFounders.map((invest, index) => (
+                    <Fragment key={index + 1}>
+                      <div className="xl:w-1/3 sm:w-full md:w-2/5 relative mt-16 mb-32 sm:mb-24 xl:max-w-sm lg:w-2/5 grid md:hidden z-10">
+                        <div className="rounded overflow-hidden shadow-md bg-white">
+                          <div className="absolute -mt-20 w-full flex  justify-center">
+                            <div className="h-32 w-32">
+                              <img
+                                src={invest.image}
+                                alt={`Imagem de perfil ${invest.name}`}
+                                title={`Imagem de perfil ${invest.name}`}
+                                className="rounded-full object-cover h-full w-full shadow-md bg-white"
+                              />
+                            </div>
+                          </div>
+                          <div className="px-6 mt-16">
+                            <div className="font-bold text-3xl text-black text-center pb-1">
+                              {invest.name}
+                            </div>
+                            <p className="text-gray-800 text-sm text-center">
+                              {invest.cargo}
+                            </p>
+                            <p className="text-center text-gray-600 text-base pt-3 font-normal">
+                              {invest.desc}
+                            </p>
+                            <div className="w-full flex justify-center pt-5 pb-5">
+                              <a href={invest.instagram} className="mx-5">
+                                <div>
+                                  <IconInstagram
+                                    className="fa-3x text-gray-300 svg-icon"
+                                    fill="#000"
+                                  />
+                                </div>
+                              </a>
+                              <a href={invest.facebook} className="mx-5">
+                                <div>
+                                  <IconFacebook
+                                    className="fa-3x text-gray-300 svg-icon"
+                                    fill="#000"
+                                  />
+                                </div>
+                              </a>
+                              <a href={invest.linkedin} className="mx-5">
+                                <div>
+                                  <IconLinkedin
+                                    className="fa-3x text-gray-300 svg-icon"
+                                    fill="#000"
+                                  />
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </Fragment>
+                  ))}
+                </div>
               </div>
             </div>
           </div>

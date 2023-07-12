@@ -22,7 +22,7 @@ const Banner = () => {
   return (
     <div className="relative">
       {/*  */}
-      <div className="absolute inset-x-0 top-0 items-center justify-center hidden overflow-hidden md:flex md:inset-y-0">
+      <div className="absolute inset-x-0 top-0 items-center justify-center hidden overflow-hidden md:flex md:inset-y-0 py-10 w-full">
         <svg
           viewBox="0 0 88 88"
           className="w-full max-w-screen-xl text-gray-800"
@@ -49,9 +49,9 @@ const Banner = () => {
       ></div> */}
       <div className="m-auto bg-white">
         <div className="flex items-center flex-wrap md:px-0">
-          <div className="container lg:w-full  lg:py-16 xl:py-16 lg:px-24 xl:px-32 z-10">
+          <div className="w-full  lg:w-full  lg:py-16 xl:py-16 lg:px-24 xl:px-32 px-10 z-10">
             {/* <div class="flex flex-wrap -m-4"> */}
-            <div class="grid gap-10 md:grid-cols-3 sm:mx-auto">
+            <div class="grid gap-10 md:grid-cols-3 mx-auto w-full container mt-10 mb-10">
               {arrImage.map((b, index) => {
                 return (
                   <div className="" key={index + 1}>

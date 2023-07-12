@@ -2,7 +2,7 @@ import { roboto } from "@/app/fonts";
 const Gallery = () => {
   return (
     <section className="relative bg-white h-4/5">
-      <div
+      {/* <div
         className="absolute"
         style={{
           background: "url('/assets/sala/sala-capa.jpg')",
@@ -14,6 +14,18 @@ const Gallery = () => {
           width: "100%",
           height: "100%",
           zIndex: "0",
+        }}
+      ></div> */}
+      <div
+        className="top-0 h-[100vh] md:h-[85vh] bg-top md:bg-bottom bg-cover absolute"
+        style={{
+          backgroundImage: "url('/assets/sala/sala-capa.jpg')",
+          backgroundRepeat: "no-repeat",
+          backgroundClip: "content-box",
+          backgroundAttachment: "fixed",
+          opacity: 0.3,
+          width: "100%",
+          height: "100%",
         }}
       ></div>
       <div className="px-5 pt-24 mx-auto flex flex-wrap z-30 container w-4/5">
@@ -60,7 +72,7 @@ const Gallery = () => {
             <div className="md:p-2 p-1 w-full z-30">
               <img
                 alt="gallery"
-                className="w-full h-96 object-cover object-center block"
+                className="w-full h-full object-cover object-center block"
                 src="/assets/sala/imagem4.jpg"
               />
             </div>
@@ -69,10 +81,10 @@ const Gallery = () => {
       </div>
 
       <div
-        className="container flex pb-24 justify-evenly"
+        className="container flex flex-col md:flex-row pb-24 justify-evenly"
         style={{ zIndex: 9, position: "relative" }}
       >
-        <div className=" ml-36 mt-16  w-2/6 text-black">
+        <div className=" md:ml-36 mt-16 w-full md:w-2/6 px-5 md:px-0 text-black">
           <h1 className="text-sm">SELECT PRIME</h1>
           <h2 className="text-3xl font-corporate ">Quer saber mais?</h2>
           <div className="border border-0 boreder-3 w-16 h-1 rounded mt-3 degrade-primary"></div>
@@ -97,10 +109,10 @@ const Gallery = () => {
             </i>{" "}
           </p>
         </div>
-        <div className="mt-16 justify-self-start">
+        <div className="mt-16 justify-center md:justify-self-start">
           <img
             alt="gallery"
-            className="aspect-[1/1] object-cover left-0 object-bottom block rounded-lg w-[26rem]"
+            className="aspect-[1/1] object-cover mx-auto md:left-0 object-bottom block rounded-lg w-[26rem] "
             src="/assets/tempo.jpeg"
           />
         </div>

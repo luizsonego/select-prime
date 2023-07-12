@@ -42,7 +42,7 @@ const Testimonials = () => {
       <div className="relative " id="depoimentos">
         <div className=" m-auto">
           <div className="flex items-center flex-wrap md:px-0">
-            <div className="relative lg:w-full lg:min-h-[35rem] lg:py-16 xl:py-16 lg:px-24 xl:px-32 bg-white">
+            <div className="relative lg:w-full lg:min-h-[35rem] lg:py-16 xl:py-16 lg:px-24 xl:px-32 py-10 bg-white">
               <Title title="Depoimentos" colorTitle="text-black" />
               <section className="text-gray-600 body-font">
                 <div className="px-5 py-5 mx-auto">
@@ -83,7 +83,50 @@ const Testimonials = () => {
               </section>
             </div>
           </div>
-          <div className="flex justify-center items-top w-full  my-10 text-center bg-black terminonial-bg">
+          <div className="container mx-auto py-16 px-8">
+            <div class="grid md:grid-cols-2 grid-cols-1 gap-8">
+              <div>
+                <ReactPlayer
+                  url="https://www.youtube.com/watch?v=oBpbZhNt5Ps"
+                  light={false}
+                  width="auto"
+                />
+              </div>
+              <div>
+                <h1
+                  variant="h1"
+                  className={`font-corporate text-strong text-3xl z-50 font-corporate mb-4`}
+                  style={{ fontWeight: "500" }}
+                >
+                  <span className="text-white text-center">Depoimento</span>
+                  <br />
+                </h1>
+                <h3
+                  variant="h1"
+                  className={`text-strong text-lg z-50 text-left font-corporate mb-4`}
+                  style={{ fontWeight: "500" }}
+                >
+                  <span className="text-white text-left">
+                    <strong>Cliente contemplado:</strong> David Souza
+                  </span>
+                </h3>
+                <p variant="p" className={`z-50 font-corporate text-left mb-4`}>
+                  Utilizando da Estratégia de Alavancagem de Capital com
+                  Consórcio Imobiliário, o cliente foi contemplado 2 vezes num
+                  prazo de apenas 8 meses, obtendo um resultado aproximado de
+                  450% sobre o capital investido. Tudo isso através da
+                  Assessoria da nossa Equipe. <br />
+                  <br /> O que você está esperando para fazer como ele? <br />
+                  <br />
+                  Faça como o David e venha você também para a{" "}
+                  <strong>
+                    <i>Select Prime Financial Solutions.</i>
+                  </strong>
+                </p>
+              </div>
+            </div>
+          </div>
+          {/* <div className="flex justify-center items-top w-full my-10 text-center bg-black terminonial-bg">
             <ReactPlayer
               url="https://www.youtube.com/watch?v=oBpbZhNt5Ps"
               light={false}
@@ -126,7 +169,7 @@ const Testimonials = () => {
                 </strong>
               </p>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </>

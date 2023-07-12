@@ -452,7 +452,7 @@ const Services = () => {
       <div className="relative">
         <div className="m-auto">
           <div className="flex items-center flex-wrap md:px-0">
-            <div className="relative lg:w-full lg:min-h-[20rem] lg:py-4 xl:py-10 lg:px-24 xl:px-32 bg-white">
+            <div className="relative lg:w-full lg:min-h-[20rem] lg:py-4 xl:py-10 lg:px-24 xl:px-32 py-10 bg-white">
               <Title
                 title="Especialidades"
                 subheader="Serviços"
@@ -460,7 +460,7 @@ const Services = () => {
                 colorsubheader="text-black"
               />
 
-              <div className="grid grid-cols-3 grid-flow-col gap-4 mt-5">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-5 md:px-0 px-5">
                 {arrCard.map((item, index) => (
                   <Card
                     key={index}

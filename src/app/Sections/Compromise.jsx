@@ -1,6 +1,5 @@
 "use client";
 import { Card, CardBody, CardHeader } from "@material-tailwind/react";
-import React from "react";
 import Title from "../Components/Title";
 
 const arrCard = [
@@ -35,10 +34,10 @@ const Compromise = () => {
       <div className="relative">
         <div className="m-auto">
           <div className="flex items-center flex-wrap md:px-0">
-            <div className="relative lg:w-full lg:min-h-[40rem] lg:pt-24 xl:pt-24 lg:px-24 xl:px-32 bg-black">
+            <div className="relative lg:w-full lg:min-h-[40rem] lg:pt-24 xl:pt-24 lg:px-24 xl:px-32 py-10 bg-black">
               <Title title="Compromisso" colorTitle="text-degrade" />
 
-              <div className="grid grid-cols-3 gap-4 mt-10 justify-center mx-3">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-10 justify-center mx-3">
                 {arrCard.map((item, index) => (
                   <div key={index} className="divide-x">
                     <Card
