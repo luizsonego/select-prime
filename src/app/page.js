@@ -1,6 +1,9 @@
 import Hero from "@/app/Sections/Hero";
 import dynamic from "next/dynamic";
 
+const DynamicEducation = dynamic(() => import("@/app/Sections/Education"), {
+  loading: () => <p>Loading...</p>,
+});
 const DynamicInvesting = dynamic(() => import("@/app/Sections/Investing"), {
   loading: () => <p>Loading...</p>,
 });
@@ -57,6 +60,7 @@ export default function Home() {
       <DynamicFaixa />
       <DynamicGallery />
       <DynamicResults />
+      <DynamicEducation />
       <DynamicServices />
       <DynamicPartners />
       <DynamicBanner />

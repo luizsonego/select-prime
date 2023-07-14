@@ -58,9 +58,11 @@ const Contact = () => {
             </div>
             <div className="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
               <p className="my-3">
+                {/* <IconLocation clasName="w-3" /> */}
                 Rua Santos Dumont, 3.275 – 19º andar – Sala 1902 <br />
                 CENTRO EMPRESARIAL EMPIRE CENTER <br />
-                Zona 01 – Maringá, PR
+                Zona 01 – Maringá, PR <br />
+                CEP: 87013-050
               </p>
               <p className="-my-1 mb-5">
                 <a className="text-yellow-700 leading-relaxed">

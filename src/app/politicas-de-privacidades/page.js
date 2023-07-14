@@ -1,8 +1,8 @@
 const Privacypolicy = () => {
   return (
-    <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-      <div className="mt-24 max-w-xl sm:text-center sm:mx-auto">
-        <h2 className="mb-6 font-corporate text-3xl font-bold tracking-tight text-gray-200 sm:text-4xl sm:leading-none">
+    <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-20 lg:px-8 lg:py-20">
+      <div className="mt-24 max-w-xl w-full sm:text-center sm:mx-auto">
+        <h2 className="mb-6 font-corporate text-md font-bold tracking-tight text-gray-200 sm:text-4xl sm:leading-none">
           <span className="relative inline-block">
             <svg
               viewBox="0 0 52 24"
@@ -27,8 +27,13 @@ const Privacypolicy = () => {
               />
             </svg>
           </span>{" "}
-          Política de Privacidade da Select Prime Financial
+          Política de Privacidade da{" "}
+          <span className="text-degrade">Select Prime Financial</span>
         </h2>
+        {/* <Title
+          title="Política de Privacidade da Select Prime Financial"
+          colorTitle="#fff"
+        /> */}
         <div className="text-justify">
           <h2>1. Informações que coletamos</h2>
           <p className="text-base text-gray-100 md:text-lg">

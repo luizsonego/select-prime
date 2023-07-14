@@ -24,14 +24,12 @@ const arrTestimonials = [
   },
   {
     name: "Nayara Lima",
-    image:
-      "https://selectprimefinancial.com.br/wp-content/uploads/2022/02/pp.jpg",
+    image: "/assets/peoples/nayara.jpeg",
     text: "Através da Select Prime conheci um jeito diferente de investir, uma proposta muito bem estruturada somada a segurança do Investimento e profissionalismo dos assessores foram os pontos fundamentais para que me tornasse cliente. Eu Recomendo!",
   },
   {
     name: "Ackley Serrano",
-    image:
-      "https://selectprimefinancial.com.br/wp-content/uploads/2022/02/pp.jpg",
+    image: "/assets/peoples/ackley.jpeg",
     text: "Invisto em Consórcio Imobiliário há algum tempo e agora com a assessoria da Select Prime ficou ainda mais fácil atingir meus objetivos através de estratégias personalizadas as quais potencializaram a rentabilidade de meus investimentos de forma inteligente e segura.",
   },
 ];
@@ -63,8 +61,8 @@ const Testimonials = () => {
                             </p>
                             <a className="inline-flex items-center">
                               <img
-                                alt={`testimonial ${testimonial.name}`}
-                                title={`testimonial ${testimonial.name}`}
+                                alt={`Imagem Depoimento ${testimonial.name}`}
+                                title={`Imagem Depoimento ${testimonial.name}`}
                                 src={testimonial.image}
                                 className="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center"
                               />

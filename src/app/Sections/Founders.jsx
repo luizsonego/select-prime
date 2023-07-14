@@ -6,20 +6,21 @@ const arrFounders = [
   {
     name: "Francis Cunha",
     image: "/assets/peoples/francis.png",
-    cargo: "CEO",
+    cargo: "CEO / Founder",
     desc: "Maringaense, Formado em Administração com ênfase em Gestão Empresarial e Negócios pela PUC/PR e Corretor Imobiliário devidamente inscrito no CRECI/PR: 38.184, com mais de 9 anos atuando no mercado financeiro e imobiliário consolidando grandes operações financeiras, fomentando inclusive o agronegócio brasileiro. Atualmente, especialista em Consórcios sendo certificado pela ABAC (Associação Brasileira das Administradoras de Consórcios).",
     instagram: "http://instagram.com/francis.cunha.selectprime",
-    facebook: "Select Prime Financial Solutions",
-    linkedin: "Francis Cunha",
+    facebook: "https://www.facebook.com/selectprimeinvestimentos",
+    linkedin: "https://www.linkedin.com/in/francis-cunha-43149a9a",
   },
   {
     name: "Luana Souza",
     image: "/assets/peoples/luana.png",
-    cargo: "Sócia – Diretora Financeira / Administrativa",
+    cargo: "Diretora Financeira / Administrativa",
     desc: "Curitibana, formada em Arquitetura e Urbanismo pela FAG (Faculdade Assis Gurgacz) e Pós-graduada em Gestão de Obras, pelo SENAI, atuando há mais de 8 anos no setor financeiro e imobiliário, fomentando operações de crédito no ramo da construção civil, atualmente especialista em Liberação de Crédito e Gestão.",
     instagram: "http://instagram.com/souza_luhh",
-    facebook: "Racon Consórcios – Maringá PR",
-    linkedin: "Select Prime Financial Solutions",
+    facebook: "https://www.facebook.com/profile.php?id=100089091664997",
+    linkedin:
+      "https://www.linkedin.com/company/select-prime-financial-solutions",
   },
 ];
 
@@ -59,6 +60,7 @@ const Founders = () => {
                       </div>
                       <div className="body">
                         <h4 className="text-black">{invest.name}</h4>
+                        <h5 className="text-black text-sm">{invest.cargo}</h5>
                         <div className="text-base/5 text-lg details transition px-6 py-5 align-center">
                           {invest.desc}
                         </div>

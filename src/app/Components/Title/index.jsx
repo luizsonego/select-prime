@@ -9,7 +9,7 @@ const Title = ({
   return (
     <>
       <h1
-        className={`-mb-1 text-xl text-center leading-[1.5] ${colorsubheader} ${poppins.className}`}
+        className={`text-xl text-center leading-[1.5] ${colorsubheader} ${poppins.className}`}
       >
         {subheader}
       </h1>

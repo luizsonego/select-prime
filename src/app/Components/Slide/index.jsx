@@ -5,7 +5,7 @@ const Slide = () => {
   return (
     <>
       <section
-        className="top-0 h-[100vh] md:h-[85vh] bg-top md:bg-bottom bg-cover"
+        className="top-0 h-[100vh] md:h-[85vh] bg-top md:bg-center bg-cover"
         style={{
           backgroundImage: "url('/assets/hero/maringa.png')",
           backgroundRepeat: "no-repeat",
@@ -15,11 +15,11 @@ const Slide = () => {
       >
         <div
           className="flex flex-col md:flex-row items-center"
-          style={{ zIndex: 999, position: "relative", height: "100%" }}
+          style={{ zIndex: 10, position: "relative", height: "100%" }}
         >
           <div className="flex-1 ml-24 text-left self-center w-full">
             <Typography
-              className="text-white text-strong text-3xl md:text-5xl z-50 font-corporate text-shadow"
+              className="text-white text-strong text-2xl md:text-5xl z-10 font-corporate text-shadow"
               style={{ color: "#fff", fontWeight: "500" }}
             >
               Invista de forma inteligente no seu futuro.
@@ -45,7 +45,7 @@ const Slide = () => {
             <div className="flex justify-start mt-8">
               <a
                 href="#contato"
-                className="font-corporate degrade-primary text-black-50  border-0 py-2 px-8 focus:outline-none transition-all hover:scale-105 hover:shadow-lg shadow-cyan-500/50 rounded text-lg"
+                className="font-corporate degrade-primary text-black  border-0 py-2 px-8 focus:outline-none transition-all hover:scale-105 hover:shadow-lg shadow-cyan-500/50 rounded text-lg"
               >
                 Invista com Select Prime
               </a>

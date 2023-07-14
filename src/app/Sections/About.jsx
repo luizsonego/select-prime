@@ -117,18 +117,18 @@ const About = () => {
             <div className="relative lg:w-full lg:min-h-[40rem] lg:py-16 xl:py-16 lg:px-24 py-10 xl:px-32 container mx-auto w-full">
               <Title title="Sobre Nós" colorTitle="text-degrade" />
               <div className="gap-16 items-center  lg:grid lg:grid-cols-2 lg:py-6 lg:px-6 px-6">
-                <div className="font-light text gray-500 sm:text-lg ">
-                  <h5 className="mb-4 text-4xl  font-extrabold text-white text-center font-corporate">
+                <div className="text gray-500 sm:text-lg ">
+                  <h2 className="text-3xl font-corporate text-center mb-8">
                     Invista com Sabedoria e Segurança
-                  </h5>
+                  </h2>
                   <h3
                     variant="h3"
                     className={`mb-4 text-4xl text-gray-900 dark:text-white text-center ${tangerine.className}`}
                   >
-                    <i>A Melhor Maneira de prever o futuro é criá-lo!</i>
+                    <i>A melhor maneira de prever o futuro é criá-lo!</i>
                   </h3>
 
-                  <div className="text-justify font-poppins font-normal">
+                  <div className="text-left font-poppins font-normal">
                     <p className="mb-4">
                       Temos como propósito disseminar os princípios da Educação
                       Financeira incentivando as pessoas a investirem seu
@@ -154,13 +154,12 @@ const About = () => {
                     </p>
                   </div>
                   <p
-                    className="no-underline hover:underline text-center cursor-pointer my-8"
+                    className="no-underline hover:underline text-left  cursor-pointer my-8"
                     onClick={() => setShow(!show)}
                   >
-                    Ler mais
+                    <i>Ler mais</i>
                   </p>
                 </div>
-                {/* <div className="grid grid-cols-2 gap-4 mt-8"> */}
                 <div className="flex items-center justify-center -mx-4 lg:pl-8 ">
                   <div className="flex flex-col items-end px-3">
                     <img

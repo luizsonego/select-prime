@@ -24,8 +24,8 @@ export default function RootLayout({ children }) {
           rel="stylesheet"
         />
       </Head>
-      <body>
-        <Navbar />
+      <body className="scroll-smooth">
+        <Navbar style={{ zIndex: "9999" }} />
         <Suspense fallback={<p>Loading...</p>}>
           <main>{children}</main>
         </Suspense>

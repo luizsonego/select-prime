@@ -471,21 +471,21 @@ const Services = () => {
                       floated={false}
                       shadow={false}
                       color="transparent"
-                      className="m-0 mb-8 rounded-none border-b border-white/10 pb-8 text-center grid justify-items-stretch"
+                      className="m-0 mb-8 rounded-none border-b-2 border-orange-400 pb-8 text-center grid justify-items-stretch"
                     >
-                      <p className="text-xl font-bold uppercase text-white">
+                      <p className="text-xl font-normal uppercase text-white">
                         {item.title}
                       </p>
                     </CardHeader>
                     <CardBody className="p-0">
-                      <p className="font-normal text-white">
+                      <p className="font-normal text-white text-center">
                         {item.description}
                       </p>
                     </CardBody>
                     <CardFooter className="mt-12 p-0 flex justify-center">
                       <Button
                         size="lg"
-                        className="text-gray-100 button-view-more shadow-none hover:shadow-sm hover:shadow-transparent bottom-5 absolute"
+                        className="text-zinc-900 degrade-primary normal-case bg-gray-200 w-1/3 py-2 shadow-none hover:shadow-sm bottom-5 absolute font-corporate"
                         ripple={false}
                         fullWidth={true}
                         onClick={() => handleOpen(item.text)}

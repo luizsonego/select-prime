@@ -10,7 +10,7 @@ const arrNav = [
     anchor: "home",
   },
   {
-    link: "Comece a investir",
+    link: "Comece a Investir",
     anchor: "comece-a-investir",
   },
   // {
@@ -28,6 +28,10 @@ const arrNav = [
   {
     link: "Sobre nós",
     anchor: "sobre",
+  },
+  {
+    link: "Educação Financeira",
+    anchor: "educacao",
   },
   {
     link: "Resultados",
