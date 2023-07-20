@@ -1,6 +1,4 @@
-import React from "react";
 import { roboto } from "../fonts";
-import Title from "./../Components/Title/index";
 
 const Education = () => {
   return (
@@ -18,16 +16,16 @@ const Education = () => {
         }}
       ></div>
       <div className="mt-5 py-5">
-        <Title title="Educação Financeira" colorTitle="text-degrade" />
+        {/* <Title title="Educação Financeira" colorTitle="text-degrade" /> */}
       </div>
       <div
         className="container flex flex-col md:flex-row pb-24 justify-evenly"
         style={{ zIndex: 9, position: "relative" }}
       >
-        <div className=" md:ml-36 w-full md:w-2/6 px-5 md:px-0 text-black">
-          {/* <h1 className="text-sm">SELECT PRIME</h1>
-          <h2 className="text-3xl font-corporate ">Quer saber mais?</h2> */}
-          {/* <div className="border border-0 boreder-3 w-16 h-1 rounded mt-3 degrade-primary"></div> */}
+        <div className=" md:ml-36 w-full md:w-2/6 px-5 md:px-0 text-white">
+          {/* <h1 className="text-sm">SELECT PRIME</h1> */}
+          <h2 className="text-3xl font-corporate ">Educação Financeira</h2>
+          <div className="border border-0 boreder-3 w-16 h-1 rounded mt-3 degrade-primary"></div>
           <p className={`text-white z-50 my-5 ${roboto.className} `}>
             Você sabe qual a diferença entre independência financeira e
             liberdade financeira? Enquanto uma pode ser entendida como um
@@ -40,7 +38,10 @@ const Education = () => {
             metas, não é mesmo?
           </p>
           <p className="no-underline hover:underline text-left text-white cursor-pointer my-8">
-            <i>Ler mais</i>
+            <a href="/educacao-financeira">
+              {" "}
+              <i>Ler mais</i>
+            </a>
           </p>
         </div>
         <div className="justify-center md:justify-self-start">

@@ -1,4 +1,8 @@
 const Contact = () => {
+  const onSubmit = (data) => {
+    const params = { email: data.email, message: data.message };
+    axios.post("/send-email", params).then((res) => console.log(res));
+  };
   return (
     <section className="text-gray-600 body-font relative bg-white">
       <div className="container px-5 py-24 mx-auto">
@@ -34,6 +38,45 @@ const Contact = () => {
                   name="email"
                   className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                 />
+              </div>
+            </div>
+            <div className="p-2 w-1/2">
+              <div className="relative">
+                <label
+                  htmlFor="email"
+                  className="leading-7 text-sm text-gray-600"
+                >
+                  Whatsapp
+                </label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                />
+              </div>
+            </div>
+            <div className="p-2 w-1/2">
+              <div className="relative">
+                <label
+                  htmlFor="email"
+                  className="leading-7 text-sm text-gray-600"
+                >
+                  Linha de Crédito desejada
+                </label>
+                <select
+                  name=""
+                  id=""
+                  className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                >
+                  <option value="a">Investimento</option>
+                  <option value="a">Aumento Patrimonial</option>
+                  <option value="a">Aumento de Capital</option>
+                  <option value="a">Renovação de Frota</option>
+                  <option value="a">Crédito Imobiliário</option>
+                  <option value="a">Crédito Rural</option>
+                  <option value="a">Crédito Veículos</option>
+                </select>
               </div>
             </div>
             <div className="p-2 w-full">

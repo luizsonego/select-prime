@@ -31,7 +31,7 @@ const arrNav = [
   },
   {
     link: "Educação Financeira",
-    anchor: "educacao",
+    anchor: "educacao-financeira",
   },
   {
     link: "Resultados",

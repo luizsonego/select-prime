@@ -81,13 +81,13 @@ const Footer = () => {
                 <IconInstagram />
               </a>
               <a
-                href="Select Prime Financial Solutions"
+                href="https://www.facebook.com/profile.php?id=100089091664997"
                 className="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-400"
               >
                 <IconFacebook />
               </a>
               <a
-                href="Select Prime Financial Solutions"
+                href="https://www.linkedin.com/company/select-prime-financial-solutions"
                 className="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-400"
               >
                 <IconLinkedin />
