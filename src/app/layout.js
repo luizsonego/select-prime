@@ -4,6 +4,7 @@ import Head from "next/head";
 import { Suspense } from "react";
 import Contactwhatsapp from "./Components/Contactwhatsapp";
 import Footer from "./Components/Footer";
+
 import Navbar from "./Components/Navbar";
 import "./globals.css";
 config.autoAddCss = false; // Tell Font Awesome to skip adding the CSS automatically since it's being imported above

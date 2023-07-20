@@ -1,11 +1,13 @@
 "use client";
 
-import { useState } from "react";
+import { useRef, useState } from "react";
 
 import { roboto } from "@/app/fonts";
 import "./styles.css";
 
 const RangeSlide = () => {
+  const form = useRef(null);
+  const [loading, setLoading] = useState(false);
   const [value, setValue] = useState(500);
   const [hidden, setHidden] = useState(1);
 
@@ -16,6 +18,31 @@ const RangeSlide = () => {
 
   const handleFormSimulate = () => {
     setHidden(0);
+  };
+
+  const submit = (e) => {
+    e.preventDefault();
+    setLoading(true);
+    const data = new FormData(form.current);
+    const name = data.get("name");
+    const email = data.get("email");
+    const whatsapp = data.get("whatsapp");
+    const line = data.get("line");
+    const message = data.get("message");
+    const investimento = data.get("valor");
+
+    window.open(
+      `https://wa.me/5544988488558?text=Estou%20entrando%20em%20contato%20para%20saber%20mais%20informa%C3%A7oes%20sobre%20investimento%2C%20meus%20dados%20sao%0A*${name}*%20-%20*${email}*%20-%20*${whatsapp}*%20-%20Linha%20de%20Investimento:%20*${line}*%20-%20*${message}*,%20valor%20de%20*${investimento.toLocaleString(
+        "pt-BR",
+        {
+          style: "currency",
+          currency: "BRL",
+        }
+      )}* `,
+      "_blank"
+    ); // open the twitter page on a new window
+    // https: window.location.href = `api.whatsapp.com/send?phone=5544988488558&text=Estou%20entrando%20em%20contato%20para%20saber%20mais%20informa%C3%A7oes%20sobre%20investimento%2C%20meus%20dados%20sao%0A*${name}*%20-%20*${email}*%20-%20*${whatsapp}*%20-%20Linha%20de%20Investimento:%20*${line}*%20-%20*${message}*`;
+    setLoading(false);
   };
 
   return (
@@ -62,7 +89,11 @@ const RangeSlide = () => {
         <section className="text-gray-600 body-font relative">
           <div className="container px-5 pt-5 pb-0 mx-auto">
             <div className="lg:w-1/2 md:w-2/3 mx-auto">
-              <div className="flex flex-wrap -m-2">
+              <form
+                ref={form}
+                onSubmit={submit}
+                className="flex flex-wrap -m-2"
+              >
                 <div className="p-2 w-1/2">
                   <div className="relative">
                     <label
@@ -98,15 +129,15 @@ const RangeSlide = () => {
                 <div className="p-2 w-1/2">
                   <div className="relative">
                     <label
-                      htmlFor="email"
+                      htmlFor="whatsapp"
                       className="leading-7 text-sm text-gray-600"
                     >
                       Whatsapp
                     </label>
                     <input
-                      type="email"
-                      id="email"
-                      name="email"
+                      type="text"
+                      id="whatsapp"
+                      name="whatsapp"
                       className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                     />
                   </div>
@@ -114,14 +145,14 @@ const RangeSlide = () => {
                 <div className="p-2 w-1/2">
                   <div className="relative">
                     <label
-                      htmlFor="email"
+                      htmlFor="line"
                       className="leading-7 text-sm text-gray-600"
                     >
                       Linha de Crédito desejada
                     </label>
                     <select
-                      name=""
-                      id=""
+                      name="line"
+                      id="line"
                       className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                     >
                       <option value="a">Investimento</option>
@@ -137,16 +168,19 @@ const RangeSlide = () => {
                 <div className="p-2 w-full">
                   <div className="relative">
                     <label
-                      htmlFor="email"
+                      htmlFor="valor"
                       className="leading-7 text-sm text-gray-600"
                     >
                       Valor escolhido
                     </label>
                     <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      value={value}
+                      type="valor"
+                      id="valor"
+                      name="valor"
+                      value={value.toLocaleString("pt-BR", {
+                        style: "currency",
+                        currency: "BRL",
+                      })}
                       className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                     />
                   </div>
@@ -171,7 +205,7 @@ const RangeSlide = () => {
                     Enviar
                   </button>
                 </div>
-              </div>
+              </form>
             </div>
           </div>
         </section>

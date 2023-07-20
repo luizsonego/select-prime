@@ -1,5 +1,6 @@
 import Hero from "@/app/Sections/Hero";
 import dynamic from "next/dynamic";
+import { Contact } from "./Sections";
 
 const DynamicEducation = dynamic(() => import("@/app/Sections/Education"), {
   loading: () => <p>Loading...</p>,
@@ -40,9 +41,6 @@ const DynamicPartners = dynamic(() => import("@/app/Sections/Partners"), {
 const DynamicCompromise = dynamic(() => import("@/app/Sections/Compromise"), {
   loading: () => <p>Loading...</p>,
 });
-const DynamicContact = dynamic(() => import("@/app/Sections/Contact"), {
-  loading: () => <p>Loading...</p>,
-});
 const DynamicBanner = dynamic(() => import("@/app/Sections/Banner"), {
   loading: () => <p>Loading...</p>,
 });
@@ -65,7 +63,7 @@ export default function Home() {
       <DynamicPartners />
       <DynamicBanner />
       <DynamicCompromise />
-      <DynamicContact />
+      <Contact />
     </>
   );
 }
