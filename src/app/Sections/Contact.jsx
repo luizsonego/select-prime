@@ -1,6 +1,7 @@
 "use client";
 
 import { useRef, useState } from "react";
+import ActionButton from "../Components/ActionButton";
 
 const Contact = () => {
   const form = useRef(null);
@@ -16,7 +17,7 @@ const Contact = () => {
     const message = data.get("message");
 
     window.open(
-      `https://wa.me/5544988488558?text=Estou%20entrando%20em%20contato%20para%20saber%20mais%20informa%C3%A7oes%20sobre%20investimento%2C%20meus%20dados%20sao%0A*${name}*%20-%20*${email}*%20-%20*${whatsapp}*%20-%20Linha%20de%20Investimento:%20*${line}*%20-%20*${message}*`,
+      `https://wa.me/5544999536451?text=Estou%20entrando%20em%20contato%20para%20saber%20mais%20informa%C3%A7oes%20sobre%20investimento%2C%20meus%20dados%20sao%0A*${name}*%20-%20*${email}*%20-%20*${whatsapp}*%20-%20Linha%20de%20Investimento:%20*${line}*%20-%20*${message}*`,
       "_blank"
     ); // open the twitter page on a new window
     // https: window.location.href = `api.whatsapp.com/send?phone=5544988488558&text=Estou%20entrando%20em%20contato%20para%20saber%20mais%20informa%C3%A7oes%20sobre%20investimento%2C%20meus%20dados%20sao%0A*${name}*%20-%20*${email}*%20-%20*${whatsapp}*%20-%20Linha%20de%20Investimento:%20*${line}*%20-%20*${message}*`;
@@ -77,7 +78,7 @@ const Contact = () => {
   // }, []);
 
   return (
-    <section className="text-gray-600 body-font relative bg-white">
+    <section className="text-gray-600 body-font relative bg-white" id="contato">
       <div className="container px-5 py-24 mx-auto">
         <div className="lg:w-1/2 md:w-2/3 mx-auto">
           <form ref={form} onSubmit={submit} className="flex flex-wrap -m-2">
@@ -174,7 +175,7 @@ const Contact = () => {
             <div className="p-2 w-full">
               <button
                 type="submit"
-                className="flex mx-auto text-black degrade-primary border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg"
+                className="flex mx-auto text-black degrade-primary border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg font-corporate degrade-primary text-black border-0 py-2 px-8 focus:outline-none transition-all hover:scale-105 hover:shadow-lg shadow-cyan-500/50 rounded text-lg"
                 disabled={loading}
               >
                 {loading ? "Enviando..." : "Enviar"}

@@ -7,7 +7,7 @@ const Faixa = () => {
             <img
               src="/assets/faixa.png"
               alt=""
-              className="top-0 bg-top md:bg-bottom h-96"
+              className="top-0 bg-top md:bg-bottom"
             />
           </div>
           <div className="self-center">

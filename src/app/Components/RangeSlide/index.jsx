@@ -2,7 +2,7 @@
 
 import { useRef, useState } from "react";
 
-import { roboto } from "@/app/fonts";
+import { roboto } from "../../fonts";
 import "./styles.css";
 
 const RangeSlide = () => {

@@ -25,7 +25,7 @@ const arrTestimonials = [
   {
     name: "Nayara Lima",
     image: "/assets/peoples/nayara.jpeg",
-    text: "Através da Select Prime conheci um jeito diferente de investir, uma proposta muito bem estruturada somada a segurança do Investimento e profissionalismo dos assessores foram os pontos fundamentais para que me tornasse cliente. Eu Recomendo!",
+    text: "Há algum tempo comecei investir em consórcio imobiliário, mas com a assessoria da Select Prime eu aprendi a organizar minhas finanças, ter estratégias e assim ficando ainda mais fácil realizar meus sonhos de forma segura e inteligente.",
   },
   {
     name: "Ackley Serrano",

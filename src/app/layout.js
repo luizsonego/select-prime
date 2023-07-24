@@ -11,7 +11,11 @@ config.autoAddCss = false; // Tell Font Awesome to skip adding the CSS automatic
 
 export const metadata = {
   title: "Select Prime Financial Solutions",
-  description: "",
+  description: "A Select Prime Solution Financial é especialista em soluções financeiras inteligentes para sua vida pessoal e empresarial. Oferecemos consultoria financeira personalizada, gestão de investimentos, planejamento da aposentadoria e assessoria para empresas. Entre em contato para uma consulta gratuita.",
+  keywords: "Select Prime Solution Financial, soluções financeiras, consultoria financeira, gestão de investimentos, planejamento da aposentadoria, assessoria para empresas",
+  author: "Select Prime Solution Financial",
+  language: "Portuguese",
+  robots: "index, follow"
 };
 
 export default function RootLayout({ children }) {
@@ -31,7 +35,7 @@ export default function RootLayout({ children }) {
           <main>{children}</main>
         </Suspense>
         <a
-          href="https://api.whatsapp.com/send?phone=5544665465465&text=Ol%C3%A1,%20gostaria%20de%20saber%20mais%20sobre%20a%20Select%20Prime"
+          href="https://api.whatsapp.com/send?phone=5544999536451&text=Ol%C3%A1,%20gostaria%20de%20saber%20mais%20sobre%20a%20Select%20Prime"
           target="_blank"
         >
           <Contactwhatsapp />

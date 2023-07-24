@@ -35,62 +35,42 @@ const Privacypolicy = () => {
           colorTitle="#fff"
         /> */}
         <div className="text-justify">
-          <h2>1. Informações que coletamos</h2>
           <p className="text-base text-gray-100 md:text-lg">
-            Coletamos informações pessoais fornecidas por você, como nome,
-            endereço de e-mail, número de telefone, informações de pagamento e
-            outras informações relevantes. Também coletamos informações não
-            pessoais, como endereço IP, tipo de navegador utilizado e páginas
-            visitadas, por meio de cookies e tecnologias similares.
+            A Select Prime Financial (doravante "Select Prime", "nós", "nosso" ou "nossa") utiliza cookies em seu site em https://selectprimefinancial.com.br/ (doravante "site"). Esta política de cookies explica o que são cookies, como os usamos e como você pode controlar seu uso, de acordo com a Lei Geral de Proteção de Dados (LGPD).
           </p>{" "}
           <br />
-          <h2>2. Uso das informações</h2>
           <p className="text-base text-gray-100 md:text-lg">
-            Utilizamos as informações coletadas para fornecer e melhorar nossos
-            serviços, enviar comunicações relevantes, realizar análises
-            internas, cumprir obrigações legais e proteger nossos direitos
-            legais.
-          </p>
-          <br />
-          <h2>3. Compartilhamento de informações</h2>
-          <p className="text-base text-gray-100 md:text-lg">
-            Compartilhamos suas informações pessoais com prestadores de serviços
-            terceirizados que atuam em nosso nome e com parceiros de negócios,
-            somente quando necessário e de acordo com as obrigações contratuais
-            de confidencialidade.
-          </p>
-          <br />
-          <h2>4. Cookies e tecnologias similares</h2>
-          <p className="text-base text-gray-100 md:text-lg">
-            Utilizamos cookies, pixels e outras tecnologias similares para
-            coletar informações sobre sua atividade no site, personalizar sua
-            experiência e melhorar nossos serviços.
-          </p>
-          <br />
-          <h2>5. Seus direitos e escolhas</h2>
-          <p className="text-base text-gray-100 md:text-lg">
-            Você tem o direito de acessar e atualizar suas informações pessoais,
-            optar por não receber comunicações de marketing e definir suas
-            preferências de cookies.
-          </p>
-          <br />
-          <h2>6. Segurança das informações</h2>
-          <p className="text-base text-gray-100 md:text-lg">
-            Implementamos medidas de segurança para proteger suas informações
-            pessoais contra acesso não autorizado ou uso indevido.
-          </p>
-          <br />
-          <h2>7. Contato</h2>
-          <p className="text-base text-gray-100 md:text-lg">
-            Se você tiver dúvidas ou solicitações relacionadas à nossa Política
-            de Privacidade, entre em contato conosco através do endereço,
-            telefone ou e-mail fornecidos abaixo.
+            Ao visitar ou utilizar nosso site, você concorda com as práticas descritas nesta política de cookies.
           </p>
           <br />
           <p className="text-base text-gray-100 md:text-lg">
-            Reservamo-nos o direito de atualizar esta Política de Privacidade
-            periodicamente. Data de entrada em vigor: [Inserir data de entrada
-            em vigor]
+            O que são cookies Cookies são pequenos arquivos de texto que são armazenados em seu dispositivo quando você visita nosso site. Os cookies são usados ​​para armazenar informações sobre suas preferências e atividades no site e para melhorar sua experiência de navegação. Alguns cookies são essenciais para o funcionamento do site, enquanto outros são opcionais e exigem o seu consentimento.
+          </p>
+          <br />
+          <p className="text-base text-gray-100 md:text-lg">
+            Como usamos cookies Podemos usar cookies para os seguintes fins:
+          </p>
+          <br />
+          <p className="text-base text-gray-100 md:text-lg">
+            2.1 Cookies essenciais Esses cookies são necessários para que o site funcione corretamente. Eles incluem cookies que permitem que você faça login em sua conta, adicione produtos ao carrinho de compras e use o carrinho de compras para fazer uma compra.
+          </p>
+          <br />
+          <p className="text-base text-gray-100 md:text-lg">
+            2.2 Cookies de desempenho Esses cookies nos ajudam a entender como você usa nosso site, permitindo-nos melhorar o desempenho do site e oferecer uma experiência de usuário melhor e mais personalizada. Eles nos permitem rastrear o número de visitantes ao site, o tempo gasto em cada página e os erros encontrados. Esses cookies são opcionais e exigem o seu consentimento.
+          </p>
+          <br />
+          <p className="text-base text-gray-100 md:text-lg">
+            2.3 Cookies de publicidade comportamental Podemos usar cookies para fornecer anúncios mais relevantes para você com base em seus interesses. Esses cookies são opcionais e exigem o seu consentimento.
+          </p>
+          <br />
+          <p className="text-base text-gray-100 md:text-lg">
+            Como controlar o uso de cookies Você pode controlar o uso de cookies no seu navegador da web. Você pode configurar seu navegador para recusar todos os cookies ou para alertá-lo quando um cookie é enviado. Observe que a recusa de cookies pode impedir o uso completo do site.
+          </p>
+          <p className="text-base text-gray-100 md:text-lg">
+            Cookies de terceiros Podemos usar cookies de terceiros, como Google Analytics e Google AdWords, em nosso site. Esses cookies são usados ​​para coletar informações sobre como você usa nosso site e para fornecer anúncios mais relevantes para você. Esses cookies são opcionais e exigem o seu consentimento.
+          </p>
+          <p className="text-base text-gray-100 md:text-lg">
+            Mudanças na política de cookies Podemos atualizar esta política de cookies periodicamente para refletir mudanças em nossas práticas de cookies. A versão mais recente desta política de cookies estará sempre disponível em nosso site. Se fizermos alterações significativas nesta política de cookies, publicaremos um aviso em nosso site ou o notificaremos por outros meios.
           </p>
           <br />
           <h3>Contato:</h3>

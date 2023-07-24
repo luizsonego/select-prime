@@ -1,47 +1,47 @@
-import Hero from "@/app/Sections/Hero";
+import Hero from "./Sections/Hero";
 import dynamic from "next/dynamic";
 import { Contact } from "./Sections";
 
-const DynamicEducation = dynamic(() => import("@/app/Sections/Education"), {
+const DynamicEducation = dynamic(() => import("./Sections/Education"), {
   loading: () => <p>Loading...</p>,
 });
-const DynamicInvesting = dynamic(() => import("@/app/Sections/Investing"), {
+const DynamicInvesting = dynamic(() => import("./Sections/Investing"), {
   loading: () => <p>Loading...</p>,
 });
-const DynamicSimulator = dynamic(() => import("@/app/Sections/Simulator"), {
+const DynamicSimulator = dynamic(() => import("./Sections/Simulator"), {
   loading: () => <p>Loading...</p>,
 });
-const DynamicAbout = dynamic(() => import("@/app/Sections/About"), {
+const DynamicAbout = dynamic(() => import("./Sections/About"), {
   loading: () => <p>Loading...</p>,
 });
-const DynamicFounders = dynamic(() => import("@/app/Sections/Founders"), {
+const DynamicFounders = dynamic(() => import("./Sections/Founders"), {
   loading: () => <p>Loading...</p>,
 });
 const DynamicTestimonials = dynamic(
-  () => import("@/app/Sections/Testimonials"),
+  () => import("./Sections/Testimonials"),
   {
     loading: () => <p>Loading...</p>,
   }
 );
-const DynamicGallery = dynamic(() => import("@/app/Sections/Gallery"), {
+const DynamicGallery = dynamic(() => import("./Sections/Gallery"), {
   loading: () => <p>Loading...</p>,
 });
-const DynamicFaixa = dynamic(() => import("@/app/Sections/Faixa"), {
+const DynamicFaixa = dynamic(() => import("./Sections/Faixa"), {
   loading: () => <p>Loading...</p>,
 });
-const DynamicResults = dynamic(() => import("@/app/Sections/Results"), {
+const DynamicResults = dynamic(() => import("./Sections/Results"), {
   loading: () => <p>Loading...</p>,
 });
-const DynamicServices = dynamic(() => import("@/app/Sections/Services"), {
+const DynamicServices = dynamic(() => import("./Sections/Services"), {
   loading: () => <p>Loading...</p>,
 });
-const DynamicPartners = dynamic(() => import("@/app/Sections/Partners"), {
+const DynamicPartners = dynamic(() => import("./Sections/Partners"), {
   loading: () => <p>Loading...</p>,
 });
-const DynamicCompromise = dynamic(() => import("@/app/Sections/Compromise"), {
+const DynamicCompromise = dynamic(() => import("./Sections/Compromise"), {
   loading: () => <p>Loading...</p>,
 });
-const DynamicBanner = dynamic(() => import("@/app/Sections/Banner"), {
+const DynamicBanner = dynamic(() => import("./Sections/Banner"), {
   loading: () => <p>Loading...</p>,
 });
 

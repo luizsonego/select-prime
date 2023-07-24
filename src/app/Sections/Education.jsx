@@ -2,7 +2,7 @@ import { roboto } from "../fonts";
 
 const Education = () => {
   return (
-    <section className="relative h-4/5">
+    <section className="relative h-4/5" id="educacao-financeira">
       <div
         className="top-0 h-[100vh] md:h-[85vh] bg-top md:bg-bottom bg-cover absolute"
         style={{

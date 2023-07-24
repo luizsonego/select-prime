@@ -12,6 +12,7 @@ import {
 import { useState } from "react";
 import { IconClose } from "../Components/Icons";
 import Title from "../Components/Title";
+import ActionButton from "../Components/ActionButton";
 
 const arrCard = [
   {
@@ -483,7 +484,7 @@ const Services = () => {
                       </p>
                     </CardBody>
                     <CardFooter className="mt-12 p-0 flex justify-center">
-                      <Button
+                      {/* <Button
                         size="lg"
                         className="text-zinc-900 degrade-primary normal-case bg-gray-200 w-1/3 py-2 shadow-none hover:shadow-sm bottom-5 absolute font-corporate"
                         ripple={false}
@@ -491,7 +492,8 @@ const Services = () => {
                         onClick={() => handleOpen(item.text)}
                       >
                         Ler mais
-                      </Button>
+                      </Button> */}
+                      <ActionButton href="#contato" text="Ler mais" onClick={() => handleOpen(item.text)} className="shadow-none hover:shadow-sm bottom-5 absolute " />
                     </CardFooter>
                   </Card>
                 ))}

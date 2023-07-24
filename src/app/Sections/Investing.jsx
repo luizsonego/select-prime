@@ -7,6 +7,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Title from "../Components/Title";
+import ActionButton from "../Components/ActionButton";
 const arrInvest = [
   {
     icon: (
@@ -91,12 +92,7 @@ const Investing = () => {
                   </div>
                 </div>
                 <div className="flex justify-center">
-                  <a
-                    href="#contato"
-                    className="font-corporate degrade-primary text-black  border-0 py-3 px-10 focus:outline-none transition-all hover:scale-105 hover:shadow-lg shadow-cyan-500/50 rounded text-lg"
-                  >
-                    Invista com Select Prime
-                  </a>
+                  <ActionButton href="#contato" text="Invista com Select Prime" />
                 </div>
               </section>
             </div>

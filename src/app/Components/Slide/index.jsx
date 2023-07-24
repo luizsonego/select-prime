@@ -1,5 +1,6 @@
 "use client";
 import { Typography } from "@material-tailwind/react";
+import ActionButton from  '../ActionButton'
 
 const Slide = () => {
   return (
@@ -43,12 +44,7 @@ const Slide = () => {
               nossa assessoria.
             </Typography>
             <div className="flex justify-start mt-8">
-              <a
-                href="#contato"
-                className="font-corporate degrade-primary text-black  border-0 py-2 px-8 focus:outline-none transition-all hover:scale-105 hover:shadow-lg shadow-cyan-500/50 rounded text-lg"
-              >
-                Invista com Select Prime
-              </a>
+              <ActionButton href="#contato" text="Invista com Select Prime" />
             </div>
           </div>
           <div className="flex-none w-[30rem]"></div>

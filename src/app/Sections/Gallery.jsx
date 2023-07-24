@@ -1,4 +1,4 @@
-import { roboto } from "@/app/fonts";
+import { roboto } from "../fonts";
 const Gallery = () => {
   return (
     <section className="relative bg-white h-4/5">
@@ -73,7 +73,7 @@ const Gallery = () => {
               <img
                 alt="gallery"
                 className="w-full h-full object-cover object-center block"
-                src="/assets/sala/imagem4.jpg"
+                src="/assets/sala/imagem3.jpeg"
               />
             </div>
           </div>
