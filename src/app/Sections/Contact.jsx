@@ -88,7 +88,7 @@ const Contact = () => {
                   htmlFor="name"
                   className="leading-7 text-sm text-gray-600"
                 >
-                  Name
+                  Nome
                 </label>
                 <input
                   type="text"
