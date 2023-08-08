@@ -32,7 +32,7 @@ const RangeSlide = () => {
     const investimento = data.get("valor");
 
     window.open(
-      `https://wa.me/5544988488558?text=Estou%20entrando%20em%20contato%20para%20saber%20mais%20informa%C3%A7oes%20sobre%20investimento%2C%20meus%20dados%20sao%0A*${name}*%20-%20*${email}*%20-%20*${whatsapp}*%20-%20Linha%20de%20Investimento:%20*${line}*%20-%20*${message}*,%20valor%20de%20*${investimento.toLocaleString(
+      `https://wa.me/5544999536451?text=Estou%20entrando%20em%20contato%20para%20saber%20mais%20informa%C3%A7oes%20sobre%20investimento%2C%20meus%20dados%20sao%0A*${name}*%20-%20*${email}*%20-%20*${whatsapp}*%20-%20Linha%20de%20Investimento:%20*${line}*%20-%20*${message}*,%20valor%20de%20*${investimento.toLocaleString(
         "pt-BR",
         {
           style: "currency",

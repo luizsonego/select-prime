@@ -5,7 +5,7 @@ const arrResults = [
   {
     id: 1,
     text: "ANOS",
-    number: <ResultEfect finalNumber="32" />,
+    number: <ResultEfect finalNumber="36" />,
   },
   {
     id: 2,
