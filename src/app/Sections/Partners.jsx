@@ -1,9 +1,8 @@
 import Title from "../Components/Title";
 
 const arrImage = [
-  "/assets/partners/racon.png",
   "/assets/partners/goldfield.png",
-  "/assets/partners/yaw.png",
+  "/assets/partners/racon.png",
   "/assets/partners/gcosta.png",
 ];
 const Partners = () => {
