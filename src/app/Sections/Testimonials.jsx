@@ -6,20 +6,17 @@ import Title from "../Components/Title";
 const arrTestimonials = [
   {
     name: "Ester Souza",
-    image:
-      "https://selectprimefinancial.com.br/wp-content/uploads/2021/11/dep-ester-souza.png",
+    image: "/assets/peoples/ester.jpeg",
     text: "A escolha pela Select Prime, ocorreu pela excelência no atendimento,  competência, transparência e clareza na proposta apresentada,  passando a confiabilidade de adquirir o Consórcio Racon, entre outras inúmeras opções de Investimentos.",
   },
   {
     name: "Viridian Zadinello",
-    image:
-      "https://selectprimefinancial.com.br/wp-content/uploads/2021/11/dep-viridian-zadinello.png",
+    image: "/assets/peoples/viridian.jpeg",
     text: "Equipe comprometida com a satisfação do cliente, me orientam em cada etapa do consórcio, estou muito satisfeito com o serviço.",
   },
   {
     name: "David Souza",
-    image:
-      "https://selectprimefinancial.com.br/wp-content/uploads/2022/02/pp.jpg",
+    image: "/assets/peoples/david.jpeg",
     text: "Através da Select Prime conheci um jeito diferente de investir, uma proposta muito bem estruturada somada a segurança do Investimento e profissionalismo dos assessores foram os pontos fundamentais para que me tornasse cliente. Eu Recomendo!",
   },
   {

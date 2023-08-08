@@ -79,7 +79,7 @@ const Navbar = () => {
  
   return (
     <header className="text-gray-600">
-      <Navegacao className="mx-auto py-2 px-4 lg:px-8 lg:py-4 text-black items-center navbar bg-transparent border-none" style={{ zIndex: 50, position: "fixed", width: "100vw" }}>
+      <Navegacao className="mx-auto py-2 px-4 lg:px-8 lg:py-1 text-black items-center border-none navbar" style={{ zIndex: 100, position: "fixed", width: "100vw" }}>
       <div className="container mx-auto flex items-center justify-between ">
         <Typography
           as="a"
@@ -93,7 +93,8 @@ const Navbar = () => {
             <Link
               key={index + 1}
               href={`/#${item.anchor}`}
-              className="mr-5  text-gray-500 hover:text-gray-300"
+              className="mr-5  hover:text-gray-300 "
+              style={{color: "#fff"}}
             >
               {item.link}
             </Link>
@@ -143,6 +144,7 @@ const Navbar = () => {
               key={index + 1}
               href={`/#${item.anchor}`}
               className="mr-5 text-gray-500 hover:text-gray-300"
+              style={{color: "#fff"}}
             >
               {item.link}
             </Link>

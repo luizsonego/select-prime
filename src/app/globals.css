@@ -49,8 +49,10 @@ body {
   background: #00000099;
 }
 .navbar {
-  backdrop-filter: blur(50px);
+  background: #00000099;
+  backdrop-filter: blur(10px);
   transition: all 0.5s;
+  color: #fff;
 }
 .navbar-fixed-top {
   height: 70px;

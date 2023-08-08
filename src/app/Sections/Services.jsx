@@ -5,11 +5,13 @@ import {
   CardBody,
   CardFooter,
   CardHeader,
+  Dialog,
   DialogBody,
+  DialogFooter,
   DialogHeader,
   Typography,
 } from "@material-tailwind/react";
-import { useState } from "react";
+import React, { useState } from "react";
 import { IconClose } from "../Components/Icons";
 import Title from "../Components/Title";
 import ActionButton from "../Components/ActionButton";
@@ -448,6 +450,7 @@ const Services = () => {
     setText(e);
     setOpen(!open);
   };
+
   return (
     <>
       <div className="relative">
@@ -486,14 +489,14 @@ const Services = () => {
                     <CardFooter className="mt-12 p-0 flex justify-center">
                       {/* <Button
                         size="lg"
-                        className="text-zinc-900 degrade-primary normal-case bg-gray-200 w-1/3 py-2 shadow-none hover:shadow-sm bottom-5 absolute font-corporate"
+                        className="font-corporate degrade-primary text-black border-0 py-2 px-8 focus:outline-none transition-all hover:scale-105 hover:shadow-lg shadow-cyan-500/50 rounded text-lg"
                         ripple={false}
                         fullWidth={true}
                         onClick={() => handleOpen(item.text)}
                       >
                         Ler mais
                       </Button> */}
-                      <ActionButton href="#contato" text="Ler mais" onClick={() => handleOpen(item.text)} className="shadow-none hover:shadow-sm bottom-5 absolute " />
+                      <ActionButton text="Ler mais" onClick={() => handleOpen(item.text)} className="shadow-none hover:shadow-sm bottom-5 absolute font-corporate degrade-primary text-black border-0 py-2 px-8 focus:outline-none transition-all hover:scale-105 hover:shadow-lg shadow-cyan-500/50 rounded text-lg cursor-pointer" />
                     </CardFooter>
                   </Card>
                 ))}
