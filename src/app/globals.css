@@ -174,3 +174,12 @@ body {
 .card-founders:hover .footer {
   border-radius: 0 0 15px 15px;
 }
+
+
+.user-cover {
+  background-size:cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-position: center center;
+}
