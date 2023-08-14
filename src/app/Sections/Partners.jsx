@@ -1,9 +1,18 @@
 import Title from "../Components/Title";
 
 const arrImage = [
-  "/assets/partners/goldfield.png",
-  "/assets/partners/racon.png",
-  "/assets/partners/gcosta.png",
+  {
+    image: "/assets/partners/goldfield.png",
+    height: "h-32",
+  },
+  {
+    image: "/assets/partners/racon.png",
+    height: "h-36",
+  },
+  {
+    image: "/assets/partners/gcosta.png",
+    height: "h-32",
+  }
 ];
 const Partners = () => {
   return (
@@ -24,8 +33,8 @@ const Partners = () => {
                     <div class="xl:w-1/4 md:w-1/2 p-4 w-96" key={index + 1}>
                       <div class="p-6 rounded-lg">
                         <img
-                          class="h-40 rounded w-full object-contain md:grayscale hover:grayscale-0 hover:scale-125 transition ease-in-out  object-center mb-6"
-                          src={image}
+                          className={`${image.height} rounded w-full object-contain md:grayscale hover:grayscale-0 hover:scale-125 transition ease-in-out  object-center mb-6`}
+                          src={image.image}
                           alt="content"
                         ></img>
                       </div>
