@@ -183,3 +183,12 @@ body {
   -o-background-size: cover;
   background-position: center center;
 }
+
+.bg-position {
+  background-position-x: center;
+}
+@media only screen and (max-width: 600px) {
+  .bg-position {
+    background-position-x: 70%;
+  }
+}

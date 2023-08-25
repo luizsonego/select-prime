@@ -3,15 +3,18 @@ import Title from "../Components/Title";
 const arrImage = [
   {
     image: "/assets/partners/goldfield.png",
-    height: "h-32",
+    height: "h-36",
+    width: "w-full",
   },
   {
     image: "/assets/partners/racon.png",
-    height: "h-36",
+    height: "h-44",
+    width: "w-full",
   },
   {
     image: "/assets/partners/gcosta.png",
     height: "h-32",
+    width: "w-10/12",
   }
 ];
 const Partners = () => {
@@ -27,13 +30,13 @@ const Partners = () => {
                 colorTitle="text-white'"
                 colorsubheader="text-white'"
               />
-              <div class="flex flex-wrap -m-4 mx-auto continer w-full justify-center">
+              <div class="flex flex-wrap -m-4 mx-auto continer w-full content-center items-center justify-center">
                 {arrImage.map((image, index) => {
                   return (
                     <div class="xl:w-1/4 md:w-1/2 p-4 w-96" key={index + 1}>
                       <div class="p-6 rounded-lg">
                         <img
-                          className={`${image.height} rounded w-full object-contain md:grayscale hover:grayscale-0 hover:scale-125 transition ease-in-out  object-center mb-6`}
+                          className={`${image.height} ${image.width} rounded object-contain md:grayscale hover:grayscale-0 hover:scale-125 transition ease-in-out  object-center mb-6`}
                           src={image.image}
                           alt="content"
                         ></img>

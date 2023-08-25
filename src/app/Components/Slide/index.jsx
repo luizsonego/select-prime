@@ -6,7 +6,7 @@ const Slide = () => {
   return (
     <>
       <section
-        className="top-52 md:top-0 h-[100vh] md:h-[85vh] bg-right-top md:bg-center bg-cover user-cover"
+        className="top-52 md:top-0 h-[100vh] md:h-[85vh] bg-position md:bg-center bg-cover user-cover"
         style={{
           backgroundImage: "url('/assets/hero/maringa.png')",
           backgroundRepeat: "no-repeat",
@@ -20,7 +20,7 @@ const Slide = () => {
         >
           <div className="flex-1 mt-48 md:mt-0 md:ml-24 text-left self-center w-full px-5">
             <Typography
-              className="text-white text-strong text-4xl md:text-5xl z-10 font-corporate text-shadow text-center md:text-left w-11/12 md:w-full"
+              className="text-white text-strong text-4xl md:text-5xl z-10 font-corporate text-shadow text-left md:text-left w-11/12 md:w-full"
               style={{ color: "#fff", fontWeight: "500" }}
             >
               Invista de forma inteligente no seu futuro.
