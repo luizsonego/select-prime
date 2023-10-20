@@ -1,8 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  experimental: {
-    appDir: true,
+  reactStrictMode: true,
+  experimental:{appDir: false},
+  devIndicators: {
+    autoPrerender: false,
   },
+  generateEtags: false,
 };
 
 module.exports = nextConfig;

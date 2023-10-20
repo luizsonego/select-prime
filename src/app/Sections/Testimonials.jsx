@@ -79,7 +79,7 @@ const Testimonials = () => {
             </div>
           </div>
           <div className="container mx-auto py-16 px-8">
-            <div class="grid md:grid-cols-2 grid-cols-1 gap-8">
+            <div className="grid md:grid-cols-2 grid-cols-1 gap-8">
               <div>
                 <ReactPlayer
                   url="https://www.youtube.com/watch?v=oBpbZhNt5Ps"

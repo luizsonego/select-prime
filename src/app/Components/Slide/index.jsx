@@ -6,11 +6,11 @@ const Slide = () => {
   return (
     <>
       <section
-        className="top-52 md:top-0 h-[100vh] md:h-[85vh] bg-position md:bg-center bg-cover user-cover"
+        className="top-52 md:top-0 h-[100vh] md:h-[85vh] bg-position md:bg-center user-cover"
         style={{
           backgroundImage: "url('/assets/hero/maringa.png')",
           backgroundRepeat: "no-repeat",
-          backgroundClip: "content-box",
+          // backgroundClip: "content-box",
           backgroundAttachment: "fixed",
         }}
       >

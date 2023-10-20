@@ -192,8 +192,8 @@ const Contact = () => {
               <p className="-my-1 mb-5">
                 <a className="text-yellow-700 leading-relaxed">
                   contato@selectprimefinancial.com.br
-                </a>
-                <p className="leading-relaxed">44 3200 1510</p>
+                </a> <br />
+                <span className="leading-relaxed">44 3200 1510</span>
               </p>
             </div>
           </form>

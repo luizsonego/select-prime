@@ -79,7 +79,7 @@ const Navbar = () => {
  
   return (
     <header className="text-gray-600">
-      <Navegacao className="mx-auto py-2 px-4 lg:px-8 lg:py-1 text-black items-center border-none navbar" style={{ zIndex: 100, position: "fixed", width: "100vw" }}>
+      <Navegacao id="navbar" className="mx-auto py-2 px-4 lg:px-8 lg:py-1 text-black items-center border-none navbar" style={{ zIndex: 100, position: "fixed", width: "100vw" }}>
       <div className="container mx-auto flex items-center justify-between ">
         <Typography
           as="a"

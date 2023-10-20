@@ -30,11 +30,11 @@ const Partners = () => {
                 colorTitle="text-white'"
                 colorsubheader="text-white'"
               />
-              <div class="flex flex-wrap -m-4 mx-auto continer w-full content-center items-center justify-center">
+              <div className="flex flex-wrap -m-4 mx-auto continer w-full content-center items-center justify-center">
                 {arrImage.map((image, index) => {
                   return (
-                    <div class="xl:w-1/4 md:w-1/2 p-4 w-96" key={index + 1}>
-                      <div class="p-6 rounded-lg">
+                    <div className="xl:w-1/4 md:w-1/2 p-4 w-96" key={index + 1}>
+                      <div className="p-6 rounded-lg">
                         <img
                           className={`${image.height} ${image.width} rounded object-contain md:grayscale hover:grayscale-0 hover:scale-125 transition ease-in-out  object-center mb-6`}
                           src={image.image}

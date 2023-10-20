@@ -45,14 +45,14 @@ const Banner = () => {
       <div className="m-auto bg-white">
         <div className="flex items-center flex-wrap md:px-0">
           <div className="w-full lg:w-full lg:py-16 xl:py-16 lg:px-24 xl:px-32 px-10 z-10">
-            {/* <div class="flex flex-wrap -m-4"> */}
-            <div class="grid gap-10 md:grid-cols-4 mx-auto w-full container mt-10 mb-10">
+            {/* <div className="flex flex-wrap -m-4"> */}
+            <div className="grid gap-10 md:grid-cols-4 mx-auto w-full container mt-10 mb-10">
               {arrImage.map((b, index) => {
                 return (
                   <div className="" key={index + 1}>
                     {b.img ? (
-                      <div class="bg-zinc-900 rounded h-96 ">
-                        <div class=" text-center">
+                      <div className="bg-zinc-900 rounded h-96 ">
+                        <div className=" text-center">
                           <img
                             src={b.img}
                             className="w-full overflow-hidden h-96 rounded-b object-cover"
@@ -61,8 +61,8 @@ const Banner = () => {
                       </div>
                     ) : (
                       <>
-                        <div class="p-8 bg-zinc-900 rounded h-96">
-                          <div class="mb-4 text-center">
+                        <div className="p-8 bg-zinc-900 rounded h-96">
+                          <div className="mb-4 text-center">
                             <div className="flex justify-center mb-5">
                               {b.icon}
                             </div>
