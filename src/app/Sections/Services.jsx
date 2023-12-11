@@ -467,7 +467,7 @@ const Services = () => {
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-5 md:px-0 px-5">
                 {arrCard.map((item, index) => (
                   <Card
-                    key={index}
+                    key={index +1}
                     variant="filled"
                     className="w-full p-8 bg-zinc-800 rounded-lg relative shadow-md hover:shadow-xl"
                   >

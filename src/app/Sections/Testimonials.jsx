@@ -121,50 +121,6 @@ const Testimonials = () => {
               </div>
             </div>
           </div>
-          {/* <div className="flex justify-center items-top w-full my-10 text-center bg-black terminonial-bg">
-            <ReactPlayer
-              url="https://www.youtube.com/watch?v=oBpbZhNt5Ps"
-              light={false}
-              config={{
-                youtube: {
-                  playerVars: { showinfo: 0 },
-                },
-              }}
-              classNames="mx-5 w-10 h-10 left-10 w-1/2"
-            />
-            <div className="text-white p-10 item-top w-1/2">
-              <h1
-                variant="h1"
-                className={`font-corporate text-strong text-3xl z-50 font-corporate mb-4`}
-                style={{ fontWeight: "500" }}
-              >
-                <span className="text-white text-center">Depoimento</span>
-                <br />
-              </h1>
-              <h3
-                variant="h1"
-                className={`text-strong text-lg z-50 text-left font-corporate mb-4`}
-                style={{ fontWeight: "500" }}
-              >
-                <span className="text-white text-left">
-                  <strong>Cliente contemplado:</strong> David Souza
-                </span>
-              </h3>
-              <p variant="p" className={`z-50 font-corporate text-left mb-4`}>
-                Utilizando da Estratégia de Alavancagem de Capital com Consórcio
-                Imobiliário, o cliente foi contemplado 2 vezes num prazo de
-                apenas 8 meses, obtendo um resultado aproximado de 450% sobre o
-                capital investido. Tudo isso através da Assessoria da nossa
-                Equipe. <br />
-                <br /> O que você está esperando para fazer como ele? <br />
-                <br />
-                Faça como o David e venha você também para a{" "}
-                <strong>
-                  <i>Select Prime Financial Solutions.</i>
-                </strong>
-              </p>
-            </div>
-          </div> */}
         </div>
       </div>
     </>

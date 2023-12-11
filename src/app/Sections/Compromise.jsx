@@ -39,7 +39,7 @@ const Compromise = () => {
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-10 justify-center mx-3">
                 {arrCard.map((item, index) => (
-                  <div key={index} className="divide-x">
+                  <div key={index + 1} className="divide-x">
                     <Card
                       variant="filled"
                       className="w-full h-64 py-4 px-8 rounded-lg bg-no-repeat bg-zinc-900 backdrop-opacity-90 bg-scroll shadow shadow-indigo-500/20 hover:shadow-zinc-500/40 transition-all"

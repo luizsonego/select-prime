@@ -19,12 +19,12 @@ const Slide = () => {
           style={{ zIndex: 10, position: "relative", height: "100%" }}
         >
           <div className="flex-1 mt-48 md:mt-0 md:ml-24 text-left self-center w-full px-5">
-            <h1
+            <Typography
               className="text-white text-strong text-4xl md:text-5xl z-10 font-corporate text-shadow text-left md:text-left w-11/12 md:w-full"
               style={{ color: "#fff", fontWeight: "500" }}
             >
               Invista de forma inteligente no seu futuro.
-            </h1>
+            </Typography>
             <Typography
               className="text-white text-strong  text-2xl z-50 font-corporate text-shadow mt-8"
               style={{ color: "#fff", fontWeight: "300" }}

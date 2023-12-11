@@ -52,7 +52,7 @@ const ResultEfect = ({ finalNumber, prefix, sufix }) => {
         });
       });
     }, 3000);
-  }, []);
+  });
 
   return (
     <p>

@@ -48,8 +48,8 @@ const Founders = () => {
             <div className="relative lg:w-full lg:min-h-[35rem] lg:py-20 xl:py-20 lg:px-24 xl:px-32 py-10 bg-black ">
               <Title title="Fundadores" colorTitle="text-degrade" />
               <div className="flex justify-center mb-20">
-                {arrFounders.map((invest, index) => (
-                  <Fragment key={index}>
+                {arrFounders?.map((invest, index) => (
+                  <Fragment key={index + 1}>
                     <div className="card-founders w-80 mx-10 rounded hidden md:block">
                       <div className="header h-[25rem]">
                         <img

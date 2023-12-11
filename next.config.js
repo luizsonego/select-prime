@@ -1,8 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  optimizeFonts: false,
   reactStrictMode: true,
-  experimental:{appDir: false},
+  // experimental:{appDir: false},
   devIndicators: {
     autoPrerender: false,
   },

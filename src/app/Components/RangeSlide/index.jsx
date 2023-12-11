@@ -72,7 +72,7 @@ const RangeSlide = () => {
               />
               <datalist className="w-[80vw] md:w-[50vw] mx-10 ">
                 {[...Array(35)].map((index) => (
-                  <option key={index} value=""></option>
+                  <option key={index +1 } value=""></option>
                 ))}
               </datalist>
             </div>
