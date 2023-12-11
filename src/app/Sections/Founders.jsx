@@ -36,7 +36,7 @@ const Founders = () => {
             backgroundSize: "80%",
             backgroundPositionY: "50%",
             backgroundPositionX: "50%",
-            backgroundAttachment: "fixed",
+            // backgroundAttachment: "fixed",
             opacity: 0.2,
             width: "100%",
             height: "100%",

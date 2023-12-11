@@ -22,10 +22,13 @@ const Gallery = () => {
           backgroundImage: "url('/assets/sala/sala-capa.jpg')",
           backgroundRepeat: "no-repeat",
           backgroundClip: "content-box",
-          backgroundAttachment: "fixed",
+          // backgroundAttachment: "fixed",
           opacity: 0.3,
           width: "100%",
           height: "100%",
+          WebkitBackgroundSize: "auto",
+            MozBackgroundSize: "auto",
+            OBackgroundSize: "auto"
         }}
       ></div>
       <div className="px-5 pt-24 mx-auto flex flex-wrap z-30 container w-4/5">

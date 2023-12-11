@@ -105,11 +105,14 @@ const About = () => {
           style={{
             backgroundImage: "url('/assets/sala/sala-capa.jpg')",
             backgroundRepeat: "no-repeat",
-            backgroundClip: "content-box",
-            backgroundAttachment: "fixed",
+            // backgroundClip: "content-box",
+            // backgroundAttachment: "fixed",
             opacity: 0.3,
             width: "100%",
             height: "100%",
+            WebkitBackgroundSize: "auto",
+            MozBackgroundSize: "auto",
+            OBackgroundSize: "auto"
           }}
         ></div>
         <div className="m-auto">

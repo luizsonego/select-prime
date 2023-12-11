@@ -138,7 +138,7 @@ const Navbar = () => {
         </IconButton>
       </div>
       <MobileNav open={openNav}>
-        <div className="container mx-auto flex flex-col gap-3 text-black">
+        <div className="container mx-auto flex flex-col gap-3 text-black" style={{background: "#00000080", position:"absolute", left: "0", width: "100%", paddingLeft: "15px",paddingBottom: "15px"}}>
         {arrNav.map((item, index) => (
             <Link
               key={index + 1}

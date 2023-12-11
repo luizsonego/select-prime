@@ -34,7 +34,7 @@ const Partners = () => {
                 {arrImage.map((image, index) => {
                   return (
                     <div className="xl:w-1/4 md:w-1/2 p-4 w-96" key={index + 1}>
-                      <div className="p-6 rounded-lg">
+                      <div className="p-6 rounded-lg" style={{display: "flex", justifyContent: "center"}}>
                         <img
                           className={`${image.height} ${image.width} rounded object-contain md:grayscale hover:grayscale-0 hover:scale-125 transition ease-in-out  object-center mb-6`}
                           src={image.image}
