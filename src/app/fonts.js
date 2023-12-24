@@ -26,11 +26,9 @@ export const roboto_mono = Roboto_Mono({
 export const roboto = Roboto({
   subsets: ["latin"],
   weight: ["100", "300", "400", "500", "700", "900"],
-  adjustFontFallback: false,
 });
 
 export const poppins = Poppins({
   subsets: ["latin"],
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
-  adjustFontFallback: false,
 });

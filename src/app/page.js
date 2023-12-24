@@ -1,14 +1,10 @@
-import { About, Banner, Compromise, Contact, Education, Faixa, Founders, Gallery, Partners, Results, Services, Testimonials } from "./Sections";
-import Hero from "./Sections/Hero";
-import Investing from "./Sections/Investing";
-import Simulator from "./Sections/Simulator";
+import {
+  About, Banner, Compromise, Contact, Education, Faixa, Founders, Gallery, Hero, Investing, Partners, Results, Services, Simulator, Testimonials
+} from "./Sections";
 
-
-
-export default function Home() {
+const Home = () => {
   return (
     <>
-      {/* <Navbar /> */}
       <Hero />
       <Investing />
       <Simulator />
@@ -27,3 +23,5 @@ export default function Home() {
     </>
   );
 }
+
+export default Home;

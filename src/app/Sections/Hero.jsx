@@ -1,6 +1,6 @@
 import Slide from "../Components/Slide";
 
-function Hero() {
+const Hero = () => {
   return (
     <div className="-top-10" id="home">
       <div className="m-auto w-full">
