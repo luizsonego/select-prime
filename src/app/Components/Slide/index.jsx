@@ -1,6 +1,6 @@
 "use client";
 import { Typography } from "@material-tailwind/react";
-import ActionButton from  '../ActionButton'
+import ActionButton from '../ActionButton';
 
 const Slide = () => {
   return (
@@ -33,7 +33,7 @@ const Slide = () => {
               Imobiliário.
             </Typography>
             <Typography
-              variant="span"
+              variant="paragraph"
               className="text-white z-50 font-roboto mt-8 md:block font-bold"
               style={{ color: "#fff", fontWeight: "300" }}
             >
