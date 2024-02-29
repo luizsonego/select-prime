@@ -1,20 +1,17 @@
 "use client";
 import {
-  Button,
   Card,
   CardBody,
   CardFooter,
   CardHeader,
-  Dialog,
   DialogBody,
-  DialogFooter,
   DialogHeader,
   Typography,
 } from "@material-tailwind/react";
-import React, { useState } from "react";
+import { useState } from "react";
+import ActionButton from "../Components/ActionButton";
 import { IconClose } from "../Components/Icons";
 import Title from "../Components/Title";
-import ActionButton from "../Components/ActionButton";
 
 const arrCard = [
   {
@@ -467,7 +464,7 @@ const Services = () => {
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-5 md:px-0 px-5">
                 {arrCard.map((item, index) => (
                   <Card
-                    key={index +1}
+                    key={index + 1}
                     variant="filled"
                     className="w-full p-8 bg-zinc-800 rounded-lg relative shadow-md hover:shadow-xl"
                   >
@@ -496,7 +493,11 @@ const Services = () => {
                       >
                         Ler mais
                       </Button> */}
-                      <ActionButton text="Ler mais" onClick={() => handleOpen(item.text)} className="shadow-none hover:shadow-sm bottom-5 absolute font-corporate degrade-primary text-black border-0 py-2 px-8 focus:outline-none transition-all hover:scale-105 hover:shadow-lg shadow-cyan-500/50 rounded text-lg cursor-pointer" />
+                      <ActionButton
+                        text="Ler mais"
+                        onClick={() => handleOpen(item.text)}
+                        className="shadow-none hover:shadow-sm bottom-5 absolute font-corporate degrade-primary text-black border-0 py-2 px-8 focus:outline-none transition-all hover:scale-105 hover:shadow-lg shadow-cyan-500/50 rounded text-lg cursor-pointer"
+                      />
                     </CardFooter>
                   </Card>
                 ))}
@@ -515,7 +516,7 @@ const Services = () => {
             <div className="relative overflow-y-auto h-[38rem] py-8 px-8 md:px-16 bg-zinc-900  shadow-md rounded border border-gray-400">
               {text}
               <div
-                className="cursor-pointer fixed top-0 right-0 mt-4 mr-5 text-gray-400 hover:text-gray-600 dark:hover:text-gray-500 transition duration-150 ease-in-out"
+                className="cursor-pointer fixed top-0 right-0 mt-4 mr-5 text-gray-400 hover:text-gray-600 hover:text-gray-500 transition duration-150 ease-in-out"
                 onClick={() => setOpen(!open)}
               >
                 <IconClose />

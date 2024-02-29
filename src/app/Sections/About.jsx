@@ -112,7 +112,7 @@ const About = () => {
             height: "100%",
             WebkitBackgroundSize: "auto",
             MozBackgroundSize: "auto",
-            OBackgroundSize: "auto"
+            OBackgroundSize: "auto",
           }}
         ></div>
         <div className="m-auto">
@@ -126,7 +126,7 @@ const About = () => {
                   </h2>
                   <h3
                     variant="h3"
-                    className={`mb-4 text-4xl text-gray-900 dark:text-white text-center ${tangerine.className}`}
+                    className={`mb-4 text-4xl text-gray-900 text-white text-center ${tangerine.className}`}
                   >
                     <i>A melhor maneira de prever o futuro é criá-lo!</i>
                   </h3>
@@ -214,7 +214,7 @@ const About = () => {
                 <div className="relative overflow-y-auto h-[38rem] py-8 px-8 md:px-16 bg-zinc-900  shadow-md rounded border border-gray-400">
                   {text}
                   <div
-                    className="cursor-pointer fixed top-0 right-0 mt-4 mr-5 text-gray-400 hover:text-gray-600 dark:hover:text-gray-500 transition duration-150 ease-in-out"
+                    className="cursor-pointer fixed top-0 right-0 mt-4 mr-5 text-gray-400 hover:text-gray-600 hover:text-gray-500 transition duration-150 ease-in-out"
                     onClick={() => setShow(!show)}
                   >
                     <IconClose />
