@@ -1,0 +1,130 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("/public/fonts/CorporateACon.otf");
+@import url("/public/fonts/corporate.ttf");
+
+@layer base {
+  html,
+  body {
+    /* @apply dark:bg-trueGray-900; */
+    scroll-behavior: smooth;
+  }
+  .font-corporate {
+    font-family: "CorporateACon", corporate, serif;
+  }
+  .degrade-primary {
+    color: black;
+    background: rgb(237, 187, 80);
+    background: -moz-linear-gradient(
+      90deg,
+      rgba(237, 187, 80, 1) 0%,
+      rgba(255, 236, 194, 1) 50%,
+      rgba(237, 187, 80, 1) 100%
+    );
+    background: -webkit-linear-gradient(
+      90deg,
+      rgba(237, 187, 80, 1) 0%,
+      rgba(255, 236, 194, 1) 50%,
+      rgba(237, 187, 80, 1) 100%
+    );
+    background: linear-gradient(
+      90deg,
+      rgba(237, 187, 80, 1) 0%,
+      rgba(255, 236, 194, 1) 50%,
+      rgba(237, 187, 80, 1) 100%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#edbb50",endColorstr="#edbb50",GradientType=1);
+  }
+  .text-degrade {
+    background: -moz-linear-gradient(
+      90deg,
+      rgba(237, 187, 80, 1) 0%,
+      rgba(255, 236, 194, 1) 50%,
+      rgba(237, 187, 80, 1) 100%
+    );
+    background: -webkit-linear-gradient(
+      90deg,
+      rgba(237, 187, 80, 1) 0%,
+      rgba(255, 236, 194, 1) 50%,
+      rgba(237, 187, 80, 1) 100%
+    );
+    background: linear-gradient(
+      90deg,
+      rgba(237, 187, 80, 1) 0%,
+      rgba(255, 236, 194, 1) 50%,
+      rgba(237, 187, 80, 1) 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: rgba(237, 187, 80, 1);
+  }
+
+  /* founders */
+  .card-founders {
+    height: 100%;
+    z-index: 29;
+    position: relative;
+  }
+  .card-founders .header {
+    height: 400px;
+  }
+  .card-founders .header img {
+    height: 400px;
+    max-height: 400px;
+    object-fit: cover;
+  }
+  .card-founders .body {
+    text-align: center;
+    color: #fff;
+    font-size: xx-large;
+    background-color: #fff;
+    border-radius: 5px 5px 0 0;
+  }
+  .card-founders:hover .body {
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0);
+  }
+  .card-founders .details {
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    position: absolute;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
+    border-radius: 15px;
+  }
+  .card-founders:hover .body .details {
+    position: absolute;
+    top: 0;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(8px);
+    border-radius: 5px 5px 0 0;
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0.5s, opacity 0.5s linear;
+    padding: 20% 0;
+  }
+  .card-founders .footer {
+    height: 50px;
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    transition: all 1s;
+    border-radius: 0 0 5px 5px;
+  }
+  .card-founders:hover .footer {
+    border-radius: 0 0 15px 15px;
+    opacity: 1;
+    position: absolute;
+    width: 100%;
+    transition: all 1s;
+    bottom: -50px;
+    z-index: 99999;
+  }
+}
