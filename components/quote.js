@@ -5,7 +5,7 @@ import Image from "next/image";
 const Quote = (props) => {
   const { data } = props;
   return (
-    <Container className="flex flex-wrap lg:gap-10 lg:flex-nowrap justify-center">
+    <Container className="flex flex-wrap lg:gap-10 lg:flex-nowrap justify-center px-5">
       {data.image && (
         <div className={`flex items-center justify-center w-full lg:w-1/2 `}>
           <div>

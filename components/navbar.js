@@ -15,6 +15,15 @@ const Navbar = ({ isAnchor }) => {
     { label: "Contato", link: "contact" },
   ];
 
+  const scrolltoHash = function (element_id) {
+    const element = document.getElementById(element_id);
+    element?.scrollIntoView({
+      behavior: "smooth",
+      block: "end",
+      inline: "nearest",
+    });
+  };
+
   return (
     <div className="w-full bg-black/[.7] fixed z-50 backdrop-blur">
       <nav className="container relative flex flex-wrap items-center justify-between p-2 mx-auto lg:justify-between xl:px-0">
@@ -28,10 +37,10 @@ const Navbar = ({ isAnchor }) => {
                     <span>
                       <Image
                         src="/img/logo.png"
-                        alt="N"
-                        width="65"
-                        height="65"
-                        className="w-32"
+                        alt="SP"
+                        width="125"
+                        height="125"
+                        // className="w-32"
                       />
                     </span>
                   </span>
@@ -61,6 +70,20 @@ const Navbar = ({ isAnchor }) => {
                     )}
                   </svg>
                 </Disclosure.Button>
+
+                <Disclosure.Panel className="flex flex-wrap w-full my-5 lg:hidden">
+                  <>
+                    {navigation.map((item, index) => (
+                      <Link
+                        key={index}
+                        href={isAnchor ? `#${item.link}` : `/#${item.link}`}
+                        className="w-full px-4 py-2 -ml-4 text-gray-500 rounded-md dark:text-gray-300 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 dark:focus:bg-gray-800 focus:outline-none"
+                      >
+                        {item.label}
+                      </Link>
+                    ))}
+                  </>
+                </Disclosure.Panel>
               </div>
             </>
           )}
@@ -72,6 +95,7 @@ const Navbar = ({ isAnchor }) => {
             {navigation.map((menu, index) => (
               <li className="mr-3 nav__item" key={index}>
                 <Link
+                  scroll={true}
                   href={isAnchor ? `#${menu.link}` : `/#${menu.link}`}
                   className="inline-block px-4 py-2 text-lg font-normal text-gray-100 no-underline rounded-md text-gray-200 hover:text-gray-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none focus:bg-gray-800"
                 >

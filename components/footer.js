@@ -12,7 +12,7 @@ export default function Footer() {
     { text: "Termos e Condições", link: "/termos-e-condicoes" },
   ];
   return (
-    <Container>
+    <Container className="px-5">
       <div className="relative">
         <div className="grid max-w-screen-xl grid-cols-1 gap-10 pt-10 mx-auto mt-5  lg:grid-cols-5">
           <div className="lg:col-span-3">
@@ -25,9 +25,9 @@ export default function Footer() {
                 <Image
                   src="/img/logo.png"
                   alt="N"
-                  width="60"
-                  height="60"
-                  className="w-32"
+                  width="120"
+                  height="120"
+                  // className="w-32"
                 />
               </Link>
             </div>

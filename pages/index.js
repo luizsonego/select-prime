@@ -44,6 +44,7 @@ import Contact from "../components/contact";
 import Simulator from "../components/simulator";
 import Founders from "../components/founders";
 import PopupWhatsApp from "../components/popupWhatsapp";
+import { tangerine } from "./fonts";
 
 const arrImage = [
   {
@@ -53,7 +54,7 @@ const arrImage = [
     image: "../public/img/partners/racon.png",
   },
   {
-    image: "../public/img/partners/gcosta.png",
+    image: "../public/img/partners/rtx.png",
   },
 ];
 const Home = () => {
@@ -82,14 +83,14 @@ const Home = () => {
       </Head>
       <Navbar isAnchor={true} />
       <Hero />
-      <Section bgColor={"bg-black"} className="h-1/2 px-4 py-16">
+      <Section bgColor={"bg-black"} className="h-1/2 px-4 py-16" id="investing">
         <SectionTitle
           textColor={"text-degrade"}
           title=" Comece a investir"
         ></SectionTitle>
         <Investings data={investing} />
       </Section>
-      <Section bgColor={"bg-white"}>
+      <Section bgColor={"bg-white"} id="simulator">
         <SectionTitle
           textColor={"text-black"}
           title="Simule seus investimentos"
@@ -115,7 +116,7 @@ const Home = () => {
         ></SectionTitle>
         <Founders data={founders} />
       </Section>
-      <Section bgColor={"bg-white"}>
+      <Section bgColor={"bg-white"} id="testimonial">
         <SectionTitle
           textColor={"text-black"}
           title="Depoimentos"
@@ -130,6 +131,7 @@ const Home = () => {
         bgImg={
           "https://www.selectprimefinancial.com.br/assets/sala/sala-capa.jpg"
         }
+        id="about"
       >
         <SectionTitle
           textColor={"text-degrade"}
@@ -139,6 +141,7 @@ const Home = () => {
         <Video />
         <SectionTitle
           textColor={"text-white"}
+          fontStyle={tangerine.className}
           title="O futuro já é presente...!"
         ></SectionTitle>
       </Section>
@@ -148,6 +151,7 @@ const Home = () => {
       </Section>
 
       <Section
+        id="education"
         bgColor={"bg-white"}
         bgImg={
           "https://www.selectprimefinancial.com.br/assets/sala/sala-capa.jpg"
@@ -157,7 +161,7 @@ const Home = () => {
         <KnowMore data={knowTwo} className="mt-20" />
       </Section>
 
-      <Section bgColor={"bg-black"}>
+      <Section bgColor={"bg-black"} id="results">
         <SectionTitle
           textColor={"text-degrade"}
           pretitle="Nossos"
@@ -206,7 +210,7 @@ const Home = () => {
         <SectionTitle></SectionTitle>
       </Section>
 
-      <Section bgColor={"bg-white"}>
+      <Section bgColor={"bg-white"} id="contact">
         <Contact />
       </Section>
       {/* <PopupWidget /> */}

@@ -11,7 +11,7 @@ const Video = () => {
           className="relative bg-indigo-300 cursor-pointer aspect-w-16 aspect-h-9 bg-gradient-to-tr from-purple-400 to-indigo-700"
           style={{
             backgroundImage:
-              "url(https://www.selectprimefinancial.com.br/assets/mulher.png)",
+              "url(https://i3.ytimg.com/vi/8O7PEJnHCd0/maxresdefault.jpg)",
             backgroundSize: "cover",
           }}
         >

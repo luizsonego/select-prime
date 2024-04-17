@@ -6,7 +6,7 @@ const Testimonials = (props) => {
   const { data } = props;
 
   return (
-    <Container>
+    <Container className="px-5">
       <div className="flex flex-wrap -m-4 justify-center">
         {data.bullets.map((item, index) => (
           <div className="p-4 md:w-1/2 w-full">

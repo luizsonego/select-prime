@@ -5,7 +5,10 @@ import heroImg from "../public/img/maringa.png";
 const Hero = () => {
   return (
     <>
-      <Container className="flex flex-wrap h-full md:h-[55rem] ">
+      <Container
+        className="flex flex-wrap h-[50rem] md:h-[55rem] px-5"
+        id="home"
+      >
         <Image
           src={heroImg}
           width="100vw"
@@ -13,7 +16,13 @@ const Hero = () => {
           alt="Hero"
           loading="lazy"
           placeholder="blur"
-          style={{ position: "absolute", left: 0, top: 0, zIndex: -1 }}
+          style={{
+            position: "absolute",
+            left: 0,
+            top: 0,
+            zIndex: -1,
+            height: "100%",
+          }}
         />
         <div className="flex items-center w-full lg:w-full mt-14 ">
           <div className="max-w-4xl mb-8">
@@ -32,7 +41,7 @@ const Hero = () => {
               nossa assessoria.
             </p>
 
-            <div className="flex flex-col items-start space-y-3 sm:space-x-4 sm:space-y-0 sm:items-center sm:flex-row">
+            <div className="flex flex-col items-start space-y-3 space-x-4 space-y-0 items-center flex-row md:items-start">
               <a
                 href=""
                 rel="noopener"

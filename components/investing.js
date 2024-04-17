@@ -29,9 +29,11 @@ function Investing(props) {
           height: "160px",
         }}
       >
-        {React.cloneElement(props.icon, {
-          className: "w-full h-14",
-        })}
+        <div className="flex flex-col justify-center items-center mt-5">
+          {React.cloneElement(props.icon, {
+            className: "w-full h-12",
+          })}
+        </div>
         <h2
           className="font-poppins text-md text-center text-gray-300 "
           style={{ padding: "15px 0" }}

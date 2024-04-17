@@ -7,7 +7,7 @@ const KnowMore = (props) => {
   const { data } = props;
   return (
     <Container
-      className={`flex flex-wrap lg:gap-10 lg:flex-nowrap mt-14 ${props.className}`}
+      className={`flex flex-wrap lg:gap-10 lg:flex-nowrap mt-14 px-5 ${props.className}`}
     >
       <div className={`flex flex-wrap items-start w-full lg:w-1/2 `}>
         <div className="w-full max-w-4xl mx-auto overflow-hidden lg:mb-20  ">

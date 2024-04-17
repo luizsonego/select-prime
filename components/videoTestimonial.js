@@ -4,7 +4,7 @@ import Container from "./container";
 const VideoTestimonial = () => {
   const [playVideo, setPlayVideo] = useState(false);
   return (
-    <Container className="flex flex-wrap  lg:gap-10 lg:flex-nowrap mt-14">
+    <Container className="flex flex-wrap  lg:gap-10 lg:flex-nowrap mt-14 px-5">
       <div className={`flex items-center justify-center w-full lg:w-1/2`}>
         <div className="w-full max-w-4xl mx-auto overflow-hidden lg:mb-20 rounded-2xl ">
           <div
@@ -12,7 +12,7 @@ const VideoTestimonial = () => {
             className="relative bg-indigo-300 cursor-pointer aspect-w-16 aspect-h-9 bg-gradient-to-tr from-purple-400 to-indigo-700"
             style={{
               backgroundImage:
-                "url(https://www.selectprimefinancial.com.br/assets/mulher.png)",
+                "url(https://i3.ytimg.com/vi/oBpbZhNt5Ps/maxresdefault.jpg)",
               backgroundSize: "cover",
             }}
           >

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Container from "./container";
 import { tangerine } from "../pages/fonts";
+// import { tangerine } from "../pages/fonts";
 
 import imageOne from "../public/img/office/sala12.jpeg";
 import imageTwo from "../public/img/office/10.jpg";
@@ -9,7 +10,7 @@ import Image from "next/image";
 
 const About = () => {
   return (
-    <Container className="flex flex-wrap mb-20 lg:gap-10 lg:flex-nowrap mt-14">
+    <Container className="flex flex-wrap mb-20 lg:gap-10 lg:flex-nowrap mt-14 px-5">
       <div className={`flex flex-wrap items-start w-full lg:w-1/2 `}>
         <div className="w-full max-w-4xl mx-auto overflow-hidden lg:mb-20 rounded-2xl ">
           <h1
@@ -26,11 +27,10 @@ const About = () => {
           <h2
             style={{
               color: "#fff",
-              fontSize: 24,
               fontWeight: 500,
               marginBottom: 10,
             }}
-            className={`${tangerine.className}`}
+            className={`${tangerine.className} text-4xl`}
           >
             A melhor maneira de prever o futuro é criá-lo!
           </h2>

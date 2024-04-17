@@ -1,34 +1,15 @@
-import {
-  Great_Vibes,
-  Poppins,
-  Roboto,
-  Roboto_Mono,
-  Tangerine,
-} from "next/font/google";
+import { Tangerine, Roboto } from "next/font/google";
 
-export const greatvibes = Great_Vibes({
-  weight: ["400"],
-  subsets: ["latin"],
-  adjustFontFallback: false,
-});
-
-export const tangerine = Tangerine({
+const tangerine = Tangerine({
   weight: ["400", "700"],
   subsets: ["latin"],
   adjustFontFallback: false,
 });
 
-export const roboto_mono = Roboto_Mono({
+const roboto = Roboto({
+  weight: ["100", "300", "400", "500", "700", "900"],
   subsets: ["latin"],
   adjustFontFallback: false,
 });
 
-export const roboto = Roboto({
-  subsets: ["latin"],
-  weight: ["100", "300", "400", "500", "700", "900"],
-});
-
-export const poppins = Poppins({
-  subsets: ["latin"],
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
-});
+export { tangerine, roboto };

@@ -4,7 +4,7 @@ import Image from "next/image";
 
 import goldfieldImg from "../public/img/partners/goldfield.png";
 import raconImg from "../public/img/partners/racon.png";
-import gCostaImg from "../public/img/partners/gcosta.png";
+import rtxImg from "../public/img/partners/rtx.png";
 
 const Partners = () => {
   return (
@@ -43,7 +43,7 @@ const Partners = () => {
           style={{ display: "flex", justifyContent: "center" }}
         >
           <Image
-            src={gCostaImg}
+            src={rtxImg}
             className={
               "rounded object-contain md:grayscale hover:grayscale-0 hover:scale-125 transition ease-in-out  object-center mb-6"
             }

@@ -176,8 +176,15 @@ const quotes = {
   image: imageQuote,
   background: "bg-gray-50",
   author: "Francis Cunha",
-  quote:
-    "Quando seguimos sozinhos, podemos ir mais rápido, pois só depende de nós. A caminhada em conjunto é mais lenta, mas chegamos mais longe. A força do grupo é maior do que a soma das partes. O objetivo alcançado pode ser maior, pois muitos contribuem com aquele sonho, fica mais fácil viabilizá-lo.",
+  quote: (
+    <i>
+      Quando seguimos sozinhos, podemos ir mais rápido, pois só depende de nós.
+      A caminhada em conjunto é mais lenta, mas chegamos mais longe. A força do
+      grupo é maior do que a soma das partes. O objetivo alcançado pode ser
+      maior, pois muitos contribuem com aquele sonho, fica mais fácil
+      viabilizá-lo.
+    </i>
+  ),
 };
 
 const quotesTwo = {

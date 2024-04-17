@@ -5,7 +5,7 @@ const Results = (props) => {
   const { data } = props;
   return (
     <Container className="pb-20">
-      <div className="flex flex-wrap justify-center gap-5  md:justify-around w-full">
+      <div className="flex flex-wrap md:flex-row flex-col justify-center gap-5 md:justify-around w-full">
         {data.bullets.map((item, index) => (
           <Numbers
             key={index}
