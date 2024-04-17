@@ -1,7 +1,12 @@
 import { useState } from "react";
 import Container from "./container";
-import { tangerine } from "../pages/fonts";
-// import { tangerine } from "../pages/fonts";
+import { Tangerine } from "next/font/google";
+
+const tangerine = Tangerine({
+  weight: ["400", "700"],
+  subsets: ["latin"],
+  display: "swap",
+});
 
 import imageOne from "../public/img/office/sala12.jpeg";
 import imageTwo from "../public/img/office/10.jpg";

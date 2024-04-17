@@ -44,7 +44,13 @@ import Contact from "../components/contact";
 import Simulator from "../components/simulator";
 import Founders from "../components/founders";
 import PopupWhatsApp from "../components/popupWhatsapp";
-import { tangerine } from "./fonts";
+import { Tangerine } from "next/font/google";
+
+const tangerine = Tangerine({
+  weight: ["400", "700"],
+  subsets: ["latin"],
+  adjustFontFallback: false,
+});
 
 const arrImage = [
   {
