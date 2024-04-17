@@ -1,7 +1,7 @@
 {
-  "name": "nextly-template",
+  "name": "select-prime",
   "version": "0.1.0",
-  "description": "Nextly Landing Page Template",
+  "description": "Select Prime Financial",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -10,14 +10,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/web3templates/nextly-template"
+    "url": "https://github.com/luizsonego/select-prime"
   },
-  "keywords": [
-    "nextjs",
-    "tailwindcss",
-    "free"
-  ],
-  "author": "Surjith S M",
   "license": "ISC",
   "dependencies": {
     "@emotion/css": "^11.10.6",

@@ -1,8 +1,7 @@
 module.exports = {
   i18n: {
-    locales: ["en"],
-    defaultLocale: "en",
+    locales: ["pt"],
+    defaultLocale: "pt",
   },
-  pageExtensions: ["page.tsx", "page.ts", "page.jsx", "page.js", "fonts.js"],
   output: "standalone",
 };
