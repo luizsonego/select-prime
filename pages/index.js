@@ -163,7 +163,7 @@ const Home = () => {
           pretitle="Nossos"
           title="Resultados"
         ></SectionTitle>
-        <Results data={dataResult} />
+        <Results txColor="text-white" data={dataResult} />
       </Section>
 
       <Section bgColor={"bg-white"} bgImg={bgEducational}>

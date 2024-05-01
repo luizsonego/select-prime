@@ -13,6 +13,7 @@ const Results = (props) => {
             desc={item.desc}
             prefix={item.prefix}
             suffix={item.suffix}
+            txColor={item.txColor}
           />
         ))}
       </div>
@@ -22,7 +23,7 @@ const Results = (props) => {
 
 function Numbers(props) {
   return (
-    <div className="text-center text-white">
+    <div className={`text-center ${props.txColor}`}>
       <h1 className="text-5xl font-poppins">
         <p>
           {props.prefix}

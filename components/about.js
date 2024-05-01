@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Container from "./container";
 import { Tangerine } from "next/font/google";
+import { results as dataResult } from "../components/data";
 
 const tangerine = Tangerine({
   weight: ["400", "700"],
@@ -13,6 +14,7 @@ import imageTwo from "../public/img/office/10.jpg";
 import imageThree from "../public/img/office/IMG_0718.jpeg";
 import Image from "next/image";
 import Modal from "./modal";
+import Results from "./results";
 
 const arrResults = [
   {
@@ -234,16 +236,7 @@ const About = () => {
               consórcio à aquisição de imóveis e veículos.
             </p>
             <p className="flex md:flex-row flex-col gap-16 justify-center">
-              {/* {arrResults.map((result) => {
-                return (
-                  <div key={result.id} className="text-center text-white">
-                    <h1 className="text-5xl font-poppins">{result.number}</h1>
-                    <h3 className="text-md font-light uppercase">
-                      {result.text}
-                    </h3>
-                  </div>
-                );
-              })} */}
+              <Results data={dataResult} txColor="text-black" />
             </p>
           </div>
         }

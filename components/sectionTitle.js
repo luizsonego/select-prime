@@ -9,7 +9,9 @@ const SectionTitle = (props) => {
       }`}
     >
       {props.pretitle && (
-        <div className="text-sm font-bold tracking-wider text-white uppercase">
+        <div
+          className={`text-sm font-bold tracking-wider uppercase ${props.textColor} ${props.fontStyle}`}
+        >
           {props.pretitle}
         </div>
       )}
@@ -24,7 +26,9 @@ const SectionTitle = (props) => {
       )}
 
       {props.children && (
-        <p className="max-w-2xl py-4 text-lg leading-normal text-gray-500 lg:text-xl xl:text-xl">
+        <p
+          className={`max-w-2xl py-4 text-lg leading-normal lg:text-xl xl:text-xl ${props.textColor} ${props.fontStyle}`}
+        >
           {props.children}
         </p>
       )}

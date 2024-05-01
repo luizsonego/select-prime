@@ -12,7 +12,7 @@ import office6 from "../public/img/office/imagem3.jpg";
 const Gallery = () => {
   return (
     <Container>
-      <div className="px-5 pt-24 mx-auto flex flex-wrap z-30 container w-4/5">
+      <div className="px-5 pt-24 mx-auto flex flex-wrap z-30 container w-4/5 hidden md:block">
         <div className="flex flex-wrap md:-m-2 -m-1">
           <div className="flex flex-wrap w-1/2">
             <div className="md:p-2 p-1 w-full">
@@ -73,6 +73,70 @@ const Gallery = () => {
               />
             </div>
           </div>
+        </div>
+      </div>
+      <div className="block md:hidden flex flex-wrap justify-center">
+        <div className="p-1 w-1/2 flex justify-center z-30">
+          <Image
+            src={office1}
+            className={"w-full object-cover object-center block"}
+            style={{ height: 150 }}
+            alt=""
+            loading="eager"
+            placeholder="blur"
+          />
+        </div>
+        <div className="p-1 w-1/2 flex justify-center z-30">
+          <Image
+            src={office2}
+            style={{ height: 150 }}
+            className={"w-full object-cover object-center block"}
+            alt=""
+            loading="eager"
+            placeholder="blur"
+          />
+        </div>
+
+        <div className="p-1 w-1/2 flex justify-center z-30">
+          <Image
+            src={office3}
+            className={"w-full object-cover object-center block"}
+            style={{ height: 150 }}
+            alt=""
+            loading="eager"
+            placeholder="blur"
+          />
+        </div>
+        <div className="p-1 w-1/2 flex justify-center z-30">
+          <Image
+            src={office4}
+            className={"w-full object-cover object-center block"}
+            style={{ height: 150 }}
+            alt=""
+            loading="eager"
+            placeholder="blur"
+          />
+        </div>
+
+        <div className="p-1 w-1/2 flex justify-center z-30">
+          <Image
+            src={office5}
+            className={"w-full object-cover  object-center block"}
+            style={{ height: 150 }}
+            alt="Hero Illustration"
+            loading="eager"
+            placeholder="blur"
+          />
+        </div>
+        <div className="p-1 w-1/2 flex justify-center z-30">
+          <Image
+            src={office6}
+            style={{ height: 150 }}
+            className={"w-full object-cover object-center block"}
+            alt="Hero Illustration"
+            loading="eager"
+            placeholder="blur"
+          />
         </div>
       </div>
       {/* <div className="w-full mx-auto overflow-hidden lg:mb-20 rounded-2xl ">

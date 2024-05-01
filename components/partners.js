@@ -19,7 +19,7 @@ const Partners = () => {
             className={
               "rounded object-contain md:grayscale hover:grayscale-0 hover:scale-125 transition ease-in-out  object-center mb-6"
             }
-            width={"50%"}
+            style={{ width: 310 }}
             alt=""
             loading="eager"
             placeholder="blur"
@@ -35,7 +35,7 @@ const Partners = () => {
               "rounded object-contain md:grayscale hover:grayscale-0 hover:scale-125 transition ease-in-out  object-center mb-6"
             }
             alt=""
-            width={"50%"}
+            style={{ width: 310 }}
             loading="eager"
             placeholder="blur"
           />
@@ -49,7 +49,7 @@ const Partners = () => {
             className={
               "rounded object-contain md:grayscale hover:grayscale-0 hover:scale-125 transition ease-in-out  object-center mb-6"
             }
-            width={"50%"}
+            style={{ width: 310 }}
             alt=""
             loading="eager"
             placeholder="blur"
