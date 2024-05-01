@@ -14,6 +14,7 @@ const Info = (props) => {
                 title={item.title}
                 description={item.description}
                 icon={item.icon}
+                fontSize={item.fontSize}
               />
             ) : (
               <img src={item.image.src} className="w-full" alt="" />
@@ -30,7 +31,7 @@ function Card(props) {
     <div className="w-full p-8 bg-zinc-800 rounded-lg relative shadow-md hover:shadow-xl">
       <>
         {props.icon && <Icon icon={props.icon} />}
-        <Title title={props.title} />
+        <Title title={props.title} fontSize={props.fontSize} />
         <Description description={props.description} />
       </>
     </div>
@@ -39,7 +40,10 @@ function Card(props) {
 
 function Title(props) {
   return (
-    <div className="m-0 mb-8 rounded-none pb-8 text-center grid justify-items-stretch font-corporate font-extrabold border-b-2 border-orange-400">
+    <div
+      className="m-0 mb-8 rounded-none pb-8 text-center grid justify-items-stretch font-corporate font-extrabold border-b-2 border-orange-400"
+      style={{ fontSize: `${props.fontSize}px` }}
+    >
       {props.title}
     </div>
   );

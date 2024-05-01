@@ -198,7 +198,11 @@ const Home = () => {
           textColor={"text-degrade"}
           title="Compromisso"
         ></SectionTitle>
-        <Info data={commitment} grid="grid-cols-1 md:grid-cols-3" />
+        <Info
+          data={commitment}
+          grid="grid-cols-1 md:grid-cols-3"
+          fontSize={30}
+        />
         <Quote data={quotesTwo} />
         <SectionTitle></SectionTitle>
       </Section>
