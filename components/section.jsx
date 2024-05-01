@@ -6,7 +6,7 @@ const Section = ({ bgImg, bgColor, ...props }) => {
         style={
           bgImg
             ? {
-                backgroundImage: bgImg ? `url(${bgImg})` : "",
+                backgroundImage: bgImg ? `url(${bgImg.src})` : "",
                 backgroundRepeat: "no-repeat",
                 backgroundPositionY: "50%",
                 backgroundPositionX: "50%",

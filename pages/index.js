@@ -35,7 +35,6 @@ import Gallery from "../components/gallery";
 import KnowMore from "../components/knowmore";
 import Results from "../components/results";
 
-import bgEducational from "../public/img/dollar.jpg";
 import Services from "../components/services";
 import Image from "next/image";
 import Partners from "../components/partners";
@@ -45,6 +44,10 @@ import Simulator from "../components/simulator";
 import Founders from "../components/founders";
 import PopupWhatsApp from "../components/popupWhatsapp";
 import { Tangerine } from "next/font/google";
+
+import bgEducational from "../public/img/dollar.jpg";
+import bgLogo from "../public/img/logo.png";
+import bgOffice from "../public/img/office/sala-capa.jpg";
 
 const tangerine = Tangerine({
   weight: ["400", "700"],
@@ -63,6 +66,7 @@ const arrImage = [
     image: "../public/img/partners/rtx.png",
   },
 ];
+
 const Home = () => {
   return (
     <>
@@ -112,10 +116,7 @@ const Home = () => {
           <Simulator />
         </SectionTitle>
       </Section>
-      <Section
-        bgColor={"bg-gray-900"}
-        bgImg={"https://www.selectprimefinancial.com.br/assets/logo.png"}
-      >
+      <Section bgColor={"bg-gray-900"} bgImg={bgLogo}>
         <SectionTitle
           textColor={"text-white"}
           title="Fundadores"
@@ -132,13 +133,7 @@ const Home = () => {
           <VideoTestimonial />
         </Section>
       </Section>
-      <Section
-        bgColor={"bg-black"}
-        bgImg={
-          "https://www.selectprimefinancial.com.br/assets/sala/sala-capa.jpg"
-        }
-        id="about"
-      >
+      <Section bgColor={"bg-black"} bgImg={bgOffice} id="about">
         <SectionTitle
           textColor={"text-degrade"}
           title="Sobre Nós"
@@ -149,6 +144,7 @@ const Home = () => {
           textColor={"text-white"}
           fontStyle={tangerine.className}
           title="O futuro já é presente...!"
+          fontSize="3.3rem"
         ></SectionTitle>
       </Section>
 
@@ -156,13 +152,7 @@ const Home = () => {
         <Quote data={quotes} />
       </Section>
 
-      <Section
-        id="education"
-        bgColor={"bg-white"}
-        bgImg={
-          "https://www.selectprimefinancial.com.br/assets/sala/sala-capa.jpg"
-        }
-      >
+      <Section id="education" bgColor={"bg-white"} bgImg={bgOffice}>
         <Gallery />
         <KnowMore data={knowTwo} className="mt-20" />
       </Section>
@@ -176,10 +166,7 @@ const Home = () => {
         <Results data={dataResult} />
       </Section>
 
-      <Section
-        bgColor={"bg-white"}
-        bgImg="https://www.selectprimefinancial.com.br/assets/dollar.jpg"
-      >
+      <Section bgColor={"bg-white"} bgImg={bgEducational}>
         <KnowMore data={knowOne} />
       </Section>
 

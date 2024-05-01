@@ -67,7 +67,7 @@ const VideoTestimonial = () => {
             }}
             className="font-corporate"
           >
-            Cliente contemplado: David Souza
+            <strong>CLIENTE CONTEMPLADO:</strong> David Souza
           </h2>
           <p
             style={{

@@ -17,6 +17,7 @@ const SectionTitle = (props) => {
       {props.title && (
         <h2
           className={`font-corporate max-w-2xl mt-3 text-3xl font-bold leading-snug tracking-tight text-gray-800 lg:leading-tight lg:text-4xl ${props.textColor} ${props.fontStyle}`}
+          style={{ fontSize: props.fontSize }}
         >
           {props.title}
         </h2>

@@ -16,11 +16,7 @@ const Info = (props) => {
                 icon={item.icon}
               />
             ) : (
-              <img
-                src={item.image}
-                className="w-full"
-                alt="Hero Illustration"
-              />
+              <img src={item.image.src} className="w-full" alt="" />
             )}
           </>
         ))}
@@ -43,7 +39,7 @@ function Card(props) {
 
 function Title(props) {
   return (
-    <div className="m-0 mb-8 rounded-none pb-8 text-center grid justify-items-stretch font-corporate">
+    <div className="m-0 mb-8 rounded-none pb-8 text-center grid justify-items-stretch font-corporate font-extrabold border-b-2 border-orange-400">
       {props.title}
     </div>
   );
@@ -62,13 +58,15 @@ function Icon(props) {
 }
 
 function ImageBg(props) {
+  const { image } = props;
   return (
     <Image
-      src={props.image}
+      src={image}
       className={"w-full object-cover h-72 object-center block"}
-      alt="Hero Illustration"
+      alt=""
       loading="eager"
       placeholder="blur"
+      blurDataURL={image.src}
     />
   );
 }

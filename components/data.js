@@ -21,9 +21,11 @@ import benefitTwoImg from "../public/img/benefit-two.png";
 import imageQuote from "../public/img/family.png";
 import educationalImg from "../public/img/education.png";
 import timeImg from "../public/img/time.jpeg";
-import womanImg from "../public/img/time.jpeg";
+
 import francisImg from "../public/img/peoples/francis.png";
 import luanaImg from "../public/img/peoples/luana.png";
+
+import womanImg from "../public/img/woman.png";
 
 import esterImg from "../public/img/peoples/ester.jpeg";
 import viridianImg from "../public/img/peoples/viridian.jpeg";
@@ -719,7 +721,7 @@ const information = {
       image: "",
     },
     {
-      image: "https://www.selectprimefinancial.com.br/assets/mulher.png",
+      image: womanImg,
     },
   ],
 };
