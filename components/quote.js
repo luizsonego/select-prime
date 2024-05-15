@@ -30,7 +30,7 @@ const Quote = (props) => {
       )}
       <div
         className={`flex flex-col justify-center  ${
-          data.image ? "w-full lg:w-1/2" : "w-1/2 justify-center"
+          data.image ? "w-full lg:w-1/2" : "w-full md:w-1/2 justify-center"
         }`}
       >
         <Text text={data.quote} author={data.author} />

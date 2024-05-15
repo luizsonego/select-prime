@@ -57,7 +57,10 @@ function Card(props) {
 
 function Title(props) {
   return (
-    <div className="m-0 mb-8 rounded-none border-b-2 border-orange-400 pb-8 text-center grid justify-items-stretch">
+    <div
+      className="m-0 mb-8 rounded-none border-b-2 border-orange-400 font-corporate pb-8 text-center grid justify-items-stretch"
+      style={{ fontSize: "20px" }}
+    >
       {props.title}
     </div>
   );

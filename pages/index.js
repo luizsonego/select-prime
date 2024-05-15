@@ -201,7 +201,7 @@ const Home = () => {
         <Info
           data={commitment}
           grid="grid-cols-1 md:grid-cols-3"
-          fontSize={30}
+          fontSize={25}
         />
         <Quote data={quotesTwo} />
         <SectionTitle></SectionTitle>
