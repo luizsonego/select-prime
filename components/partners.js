@@ -4,7 +4,7 @@ import Image from "next/image";
 
 import goldfieldImg from "../public/img/partners/goldfield.png";
 import raconImg from "../public/img/partners/racon.png";
-import rtxImg from "../public/img/partners/rtx.png";
+import rtxImg from "../public/img/partners/gcosta.png";
 
 const Partners = () => {
   return (
